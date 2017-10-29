@@ -8,116 +8,266 @@ body{
   margin:0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  height: 75vw;
+  overflow-y: scroll;
+}
+
+.grid{
   background-image: url("../img/bg.png");
   background-size: cover;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 75vw;
-}
-
-.grid{
   display:grid;
   grid-template-columns: 7% 22% 35.5% 29.8% 5.7%;
   grid-auto-rows: 1vw;
 }
 
 
+
 /* Measurings from Photoshop
 Original photo : width = 4770px, height=3577px
-
+NOTE: All is referenced to width of the screen
 */
 
 /*Column 1*/
 .block_side_left{
   grid-row:1/76;
   grid-column: 1/2;
-  background-color: red;
 }
 /*Column 2*/
 .blank_col2{
   grid-column:2/3;
   grid-row:1/15;
-  background-color: white;
 }
+
 .block_computer{
   grid-row: 15/40;
   grid-column:2/3;
-  background-color: blue;
+  position:relative;
 }
 .block_books_left{
   grid-row: 40/54;
   grid-column:2/3;
-  background-color: yellow;
+  position:relative;
 }
 .blank_col2_2{
   grid-row:2/3;
   grid-row:54/76;
-  background-color: white;
 }
 /*Column 3*/
 .blank_col3{
   grid-column:3/4;
   grid-row:1/25;
-  background-color: white;
 }
 .block_woodman{
   grid-column:3/4;
   grid-row:25/38;
-  background-color: blue;
+  position:relative;
 }
 
 .block_ukulele{
   grid-column:3/4;
   grid-row:38/51;
-  background-color: green;
+  position:relative;
 }
 
 .block_books_middle{
   grid-column:3/4;
   grid-row:51/64;
-  background-color: blue;
+  position:relative;
 }
 
 .blank_col3_2{
   grid-column: 3/4;
   grid-row:64/76;
-  background-color: white;
 }
 
 /*Fourth column*/
-.blanck_col4{
+.blank_col4{
   grid-column:4/5;
   grid-row:1/15;
-  background-color: white;
 }
 
 .block_plant{
   grid-column:4/5;
   grid-row:15/29;
-  background-color: red;
+  position:relative;
 }
 
 .block_micro{
   grid-column:4/5;
   grid-row:29/44;
-  background-color: purple;
+  position:relative;
 }
 
 .block_slack{
   grid-column:4/5;
   grid-row:44/58;
-  background-color: green;
+  position:relative;
 }
 
 .blank_col4_2{
   grid-column:4/5;
   grid-row:58/76;
-  background-color: white;
 }
 
 /*.Fifth column*/
 .block_side_right{
-  grid-row:1/76;
+  grid-row:1/;
   grid-column: 5/6;
-  background-color: red;
+}
+
+/*-------------------Shelf elements----------------------------------------*/
+#Name{
+  width: 56.35vw;
+  height: 9.2vw;
+  position:relative;
+  /*display:inline-block;*/
+  left:0px;
+  top:5vw;
+  overflow: visible;
+  z-index: 2;
+}
+
+/*First column*/
+#Computer{
+  width:22.41vw;
+  height:14.25vw;
+  position:absolute;
+  bottom:-.7vw;
+  left:0;
+}
+
+#Books_left{
+  width:17.33vw;
+  height:13.5vw;
+  position:absolute;
+  left:1vw;
+  bottom:-1vw;
+}
+
+/*Second column*/
+
+#Books_mid_0{
+  width:9.077vw;
+  height:12.054vw;
+  position:absolute;
+  left:1vw;
+  bottom:-.2vw;
+}
+
+#Books_mid_0_shadow{
+  width:3.941vw;
+  height:13.144vw;
+  position:absolute;
+  left:0;
+  bottom:-1vw;
+}
+
+#Pens{
+  width:6.582vw;
+  height:9vw;
+  position:absolute;
+  left:10vw;
+  bottom:-.2vw;
+}
+
+#Woodman{
+  width:6.1215vw;
+  height:12.78vw;
+  position:absolute;
+  right:10.5vw;
+  bottom:-.2vw;
+}
+
+#Papers{
+  width:10.419vw;
+  height:3.3542vw;
+  position:absolute;
+  right:4vw;
+  bottom:-.8vw;
+}
+
+#Ukulele{
+  width:28.67vw;
+  height:10.77vw;
+  position:absolute;
+  right:1vw;
+  bottom:-.2vw;
+  z-index: 1;
+}
+
+#Ukulele_shadow{
+  width:30.104vw;
+  height:2.914vw;
+  position:absolute;
+  left:5vw;
+  bottom:-.3vw;
+  z-index:0;
+}
+
+#Books_mid_1{
+  width:18.825vw;
+  height:13.75262vw;
+  position:absolute;
+  right:.2vw;
+  bottom:-.2vw;
+  z-index: 2;
+}
+
+#Books_mid_1_shadow{
+  width:21.34vw;
+  height:6.561vw;
+  position:absolute;
+  right:-.5vw;
+  bottom:-2vw;
+  z-index: 0;
+}
+/*Third column*/
+#Plant{
+  width:23.41vw;
+  height:15.26vw;
+  position:absolute;
+  right:4vw;
+  bottom:-.7vw;
+}
+
+#Micro{
+  width:14.255vw;
+  height:4.779vw;
+  position:absolute;
+  right:11vw;
+  bottom:0vw;
+}
+
+#Slack{
+  width:29.6vw;
+  height:12.8vw;
+  position:absolute;
+  right:.5vw;
+  bottom:-.2vw;
+  z-index: 2;
+}
+
+#Slack_shadow{
+  width:34.06vw;
+  height:6.603vw;
+  position:absolute;
+  right:-2.8vw;
+  bottom:-1.5vw;
+  z-index:0;
+}
+
+/*Mobile versions*/
+.mobile_version{
+  display: none;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 650px) {
+  body .grid{
+    display:none;
+    background-color:white;
+  }
 }
