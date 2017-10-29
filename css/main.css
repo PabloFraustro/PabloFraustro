@@ -1,7 +1,123 @@
+
+*{
+  margin:0;
+  padding:0;
+}
+
 body{
   margin:0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 75vw;
 }
-canvas{
-  width:100%;
-  height:100%;
+
+.grid{
+  display:grid;
+  grid-template-columns: 7% 22% 35.5% 29.8% 5.7%;
+  grid-auto-rows: 1vw;
+}
+
+
+/* Measurings from Photoshop
+Original photo : width = 4770px, height=3577px
+
+*/
+
+/*Column 1*/
+.block_side_left{
+  grid-row:1/76;
+  grid-column: 1/2;
+  background-color: red;
+}
+/*Column 2*/
+.blank_col2{
+  grid-column:2/3;
+  grid-row:1/15;
+  background-color: white;
+}
+.block_computer{
+  grid-row: 15/40;
+  grid-column:2/3;
+  background-color: blue;
+}
+.block_books_left{
+  grid-row: 40/54;
+  grid-column:2/3;
+  background-color: yellow;
+}
+.blank_col2_2{
+  grid-row:2/3;
+  grid-row:54/76;
+  background-color: white;
+}
+/*Column 3*/
+.blank_col3{
+  grid-column:3/4;
+  grid-row:1/25;
+  background-color: white;
+}
+.block_woodman{
+  grid-column:3/4;
+  grid-row:25/38;
+  background-color: blue;
+}
+
+.block_ukulele{
+  grid-column:3/4;
+  grid-row:38/51;
+  background-color: green;
+}
+
+.block_books_middle{
+  grid-column:3/4;
+  grid-row:51/64;
+  background-color: blue;
+}
+
+.blank_col3_2{
+  grid-column: 3/4;
+  grid-row:64/76;
+  background-color: white;
+}
+
+/*Fourth column*/
+.blanck_col4{
+  grid-column:4/5;
+  grid-row:1/15;
+  background-color: white;
+}
+
+.block_plant{
+  grid-column:4/5;
+  grid-row:15/29;
+  background-color: red;
+}
+
+.block_micro{
+  grid-column:4/5;
+  grid-row:29/44;
+  background-color: purple;
+}
+
+.block_slack{
+  grid-column:4/5;
+  grid-row:44/58;
+  background-color: green;
+}
+
+.blank_col4_2{
+  grid-column:4/5;
+  grid-row:58/76;
+  background-color: white;
+}
+
+/*.Fifth column*/
+.block_side_right{
+  grid-row:1/76;
+  grid-column: 5/6;
+  background-color: red;
 }
