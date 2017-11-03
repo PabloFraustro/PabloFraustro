@@ -148,6 +148,15 @@ NOTE: All is referenced to width of the screen
   left:0;
 }
 
+#Computer_ON{
+  width:15.34vw;
+  height:10.27vw;
+  position:absolute;
+  bottom:1.7vw;
+  left:3.5vw;
+  display:none;
+}
+
 #Books_left{
   width:17.33vw;
   height:13.5vw;
@@ -273,6 +282,7 @@ NOTE: All is referenced to width of the screen
 #Slackline_modalTitle{
   font-size:40px;
 }
+
 
 /*Hover effects*/
 
