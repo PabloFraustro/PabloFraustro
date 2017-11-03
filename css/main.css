@@ -18,6 +18,10 @@ body{
 
 .grid{
   width:100%;
+  -webkit-background-image: url("../img/bg.png");
+  -moz-background-image: url("../img/bg.png");
+  -ms-background-image: url("../img/bg.png");
+  -o-background-image: url("../img/bg.png");
   background-image: url("../img/bg.png");
   background-repeat:no-repeat;
   -webkit-background-size: cover;
@@ -252,7 +256,7 @@ NOTE: All is referenced to width of the screen
   height:12.8vw;
   position:absolute;
   left:64vw;
-  bottom:-10.5vw;
+  padding-top:2vw;
   z-index: 1;
 }
 
@@ -261,7 +265,7 @@ NOTE: All is referenced to width of the screen
   height:6.603vw;
   position:absolute;
   right:4vw;
-  bottom:-12vw;
+  padding-top:9vw;
   z-index:0;
 }
 
