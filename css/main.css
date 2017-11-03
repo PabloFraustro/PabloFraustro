@@ -256,7 +256,7 @@ NOTE: All is referenced to width of the screen
   height:12.8vw;
   position:absolute;
   left:64vw;
-  padding-top:2vw;
+  margin-top:2vw;
   z-index: 1;
 }
 
@@ -265,9 +265,21 @@ NOTE: All is referenced to width of the screen
   height:6.603vw;
   position:absolute;
   right:4vw;
-  padding-top:9vw;
+  margin-top:9vw;
   z-index:0;
 }
+
+/*Modals*/
+#Slackline_modalTitle{
+  font-size:40px;
+}
+
+/*Hover effects*/
+
+.block_slack :hover {
+  cursor:pointer;
+}
+
 
 /*Mobile versions*/
 .mobile_version{
