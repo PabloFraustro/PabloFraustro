@@ -10,7 +10,8 @@ $(document).ready(function() {
   $(".block_computer").hover(function(){
     $("#Computer_ON").toggle();
     $(".block_computer").css("cursor","pointer");
-  });
+  }
+);
 
   $(".block_computer").on("click",function(){
     $("#Computer_modal").modal('toggle');
