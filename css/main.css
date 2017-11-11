@@ -149,11 +149,11 @@ NOTE: All is referenced to width of the screen
 }
 
 #Computer_ON{
-  width:15.34vw;
-  height:10.27vw;
+  width:15.49vw;
+  height:10.20vw;
   position:absolute;
-  bottom:1.7vw;
-  left:3.5vw;
+  bottom:1.65vw;
+  left:3.4vw;
   display:none;
 }
 
@@ -270,10 +270,10 @@ NOTE: All is referenced to width of the screen
 }
 
 #Slack_shadow{
-  width:34.06vw;
+  width:32vw;
   height:6.603vw;
   position:absolute;
-  right:4vw;
+  right:5vw;
   margin-top:9vw;
   z-index:0;
 }
@@ -286,10 +286,17 @@ NOTE: All is referenced to width of the screen
 
 /*Hover effects*/
 
-.block_slack :hover {
+.block_slack:hover {
   cursor:pointer;
 }
 
+.block_woodman:hover {
+  cursor:pointer;
+}
+
+.block_micro:hover {
+  cursor:pointer;
+}
 
 /*Mobile versions*/
 .mobile_version{
