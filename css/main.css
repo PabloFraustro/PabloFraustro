@@ -295,12 +295,21 @@ NOTE: All is referenced to width of the screen
   cursor:pointer;
 }
 
-img:not(#Computer_ON):not(#Computer):not(#Name):not(#Slack):not(#Slack_shadow):hover{
+img:not(#Computer_ON):not(#Computer):not(#Name):not(#Slack):not(#Slack_shadow):not(#Papers):hover{
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
 }
+
+img {
+    /*image-rendering: optimizeSpeed;             /*                     */*/
+    /*image-rendering: -moz-crisp-edges;          /* Firefox             */*/
+    image-rendering: -o-crisp-edges;            /* Opera               */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+    /*image-rendering: optimize-contrast;         /* CSS3 Proposed       */*/
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+    }
 
 @keyframes shake {
   10%, 90% {
