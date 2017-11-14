@@ -284,8 +284,20 @@ NOTE: All is referenced to width of the screen
 }
 
 /*Modals*/
-#Slackline_modalTitle{
-  font-size:40px;
+
+.modal{
+  font-family: "Open Sans",sans-serif;
+}
+.modal h5{
+  font-size:45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal i{
+  font-weight: 300;
+  font-style: italic;
+  font-size:20px;
 }
 
 
