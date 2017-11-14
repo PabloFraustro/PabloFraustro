@@ -23,6 +23,7 @@ body{
   -ms-background-image: url("../img/bg.png");
   -o-background-image: url("../img/bg.png");
   background-image: url("../img/bg.png");
+
   background-repeat:no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -76,6 +77,7 @@ NOTE: All is referenced to width of the screen
   grid-column:3/4;
   grid-row:25/38;
   position:relative;
+  transition-duration: 0.5s;
 }
 
 .block_ukulele{
@@ -111,11 +113,13 @@ NOTE: All is referenced to width of the screen
   grid-column:4/5;
   grid-row:29/44;
   position:relative;
+  transition-duration: 0.5s;
 }
 
 .block_slack{
   grid-column:4/5;
   grid-row:44/58;
+  transition-duration: 0.5s;
 }
 
 .blank_col4_2{
@@ -287,15 +291,22 @@ NOTE: All is referenced to width of the screen
 
 /*Hover effects*/
 
+
 .block_slack:hover {
   cursor:pointer;
+  transition-duration: 0.5s;
+  background-color: rgba(255,255,255,.1);
+  /*box-shadow: .2vw -.2vw 1vw .1vw #fff;*/
 }
 
 .block_woodman:hover {
   cursor:pointer;
+  transition-duration: 0.5s;
+  background-color: rgba(255,255,255,.1);
+  box-shadow: .5vw -,5vw 1vw .1vw #fff;
 }
 
-img:not(#Computer_ON):not(#Computer):not(#Name):not(#Slack):not(#Slack_shadow):not(#Papers):hover{
+img:not(#Computer_ON):not(#Computer):not(#Name):not(#Slack):not(#Slack_shadow):not(#Papers):not(#Books_mid_0_shadow):hover{
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -331,6 +342,15 @@ img {
 
 .block_micro:hover {
   cursor:pointer;
+  transition-duration: 0.5s;
+  background-color: rgba(255,255,255,.1);
+  box-shadow: .5vw -,5vw 1vw .1vw #fff;
+}
+
+.block_computer:hover {
+  transition-duration: 0.5s;
+  background-color: rgba(255,255,255,.1);
+  box-shadow: .5vw -,5vw 1vw .1vw #fff;
 }
 
 /*Mobile versions*/

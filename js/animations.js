@@ -29,6 +29,4 @@ $(document).ready(function() {
     $("#Electronics_modal").modal('toggle');
   });
 
-
-
 });
