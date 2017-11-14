@@ -30,7 +30,7 @@ body{
   -o-background-size: cover;
   background-size: cover;
   display:grid;
-  grid-template-columns: 7% 22% 35% 30% 6%;
+  grid-template-columns: 7% 22% 35% 29% 7%;
   grid-auto-rows: 1vw;
 }
 
@@ -296,7 +296,6 @@ NOTE: All is referenced to width of the screen
   cursor:pointer;
   transition-duration: 0.5s;
   background-color: rgba(255,255,255,.1);
-  /*box-shadow: .2vw -.2vw 1vw .1vw #fff;*/
 }
 
 .block_woodman:hover {
