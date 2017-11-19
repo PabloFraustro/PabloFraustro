@@ -407,7 +407,8 @@ img {
   top:50%;
 }
 #progstat{
-  font-size:0.7em;
+  font-size:1.5em;
+  font-family: "Open Sans",sans-serif; 
   letter-spacing: 3px;
   position:absolute;
   top:50%;
