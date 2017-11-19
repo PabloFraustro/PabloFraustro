@@ -30,4 +30,18 @@ $(document).ready(function() {
     $("#Electronics_modal").modal('toggle');
   });
 
+  // Automatically close vimeo video when closing modal
+  var $frame = $('iframe#embedded_video');
+
+  $('#Slackline_modal').on('hidden.bs.modal', function () {
+    // saves the current iframe source
+    var vidsrc = $frame.attr('src');
+
+    // sets the source to nothing, stopping the video
+    $frame.attr('src','');
+
+    // sets it back to the correct link so that it reloads immediately on the next window open
+    $frame.attr('src', vidsrc);
+});
+
 });
