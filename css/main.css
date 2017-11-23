@@ -402,6 +402,14 @@ img {
     color:white;
   }
 
+  .mobile_version h3{
+    padding:9vw 7vw;
+    margin-top:0vw;
+    font-size:10vw;
+    font-weight: 600;
+    color:white;
+  }
+
   .block_computer{
     width:100%;
     height:37vw;
@@ -480,8 +488,8 @@ img {
   }
 
   #Slack{
-    width:90.6vw;
-    height:36.8vw;
+    width:80.6vw;
+    height:32.8vw;
     position:absolute;
     left:5.5vw;
     bottom:1vw;
