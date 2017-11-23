@@ -368,7 +368,19 @@ img {
 
 /*Mobile versions*/
 .mobile_version{
-  display: none;
+  visibility: hidden;
+  width:100%;
+  height:210vw;
+  -webkit-background-image: url("../img/bg_mobile.png");
+  -moz-background-image: url("../img/bg_mobile.png");
+  -ms-background-image: url("../img/bg_mobile.png");
+  -o-background-image: url("../img/bg_mobile.png");
+  background-image: url("../img/bg_mobile.png");
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*Media Queries*/
@@ -376,7 +388,80 @@ img {
 @media only screen and (max-width: 650px) {
   body .grid{
     display:none;
-    background-color:white;
+  }
+  body .mobile_version{
+   visibility: visible;
+   display:flex;
+  }
+
+  #Name{
+    width: 100vw;
+    height: 16vw;
+    position:absolute;
+    top:23vw;
+  }
+
+  .block_computer{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:102vw;
+  }
+
+  #Computer{
+    width:50.41vw;
+    height:32.25vw;
+    position:absolute;
+    left:30vw;
+    bottom:-1vw;
+  }
+
+  .block_woodman{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:65vw;
+  }
+
+  #Books_mid_0{
+    width:27.077vw;
+    height:36.054vw;
+    position:absolute;
+    left:1vw;
+    bottom:-2.4vw;
+  }
+
+  #Books_mid_0_shadow{
+    width:9.941vw;
+    height:39.144vw;
+    position:absolute;
+    left:0;
+    bottom:-4vw;
+  }
+
+  #Pens{
+    width:18.582vw;
+    height:27vw;
+    position:absolute;
+    left:30vw;
+    bottom:-2.3vw;
+  }
+
+  #Woodman{
+    width:18.1215vw;
+    height:36.78vw;
+    position:absolute;
+    right:13vw;
+    bottom:-3vw;
+    image-rendering:crisp-edges;
+  }
+
+  #Papers{
+    width:30.419vw;
+    height:9.3542vw;
+    position:absolute;
+    right:20vw;
+    bottom:-4vw;
   }
 }
 
