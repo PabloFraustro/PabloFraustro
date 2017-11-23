@@ -370,7 +370,7 @@ img {
 .mobile_version{
   visibility: hidden;
   width:100%;
-  height:210vw;
+  height:220vw;
   -webkit-background-image: url("../img/bg_mobile.png");
   -moz-background-image: url("../img/bg_mobile.png");
   -ms-background-image: url("../img/bg_mobile.png");
@@ -394,33 +394,48 @@ img {
    display:flex;
   }
 
-  #Name{
-    width: 100vw;
-    height: 16vw;
-    position:absolute;
-    top:23vw;
+  .mobile_version h1{
+    padding:2vw;
+    margin-top:0vw;
+    font-size:15vw;
+    font-weight: 600;
+    color:white;
   }
 
   .block_computer{
     width:100%;
     height:37vw;
     position:absolute;
-    top:102vw;
-  }
-
-  #Computer{
-    width:50.41vw;
-    height:32.25vw;
-    position:absolute;
-    left:30vw;
-    bottom:-1vw;
+    top:107vw;
   }
 
   .block_woodman{
     width:100%;
     height:37vw;
     position:absolute;
-    top:65vw;
+    top:69vw;
+  }
+
+  .block_micro{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:147vw;
+  }
+
+  .block_slack{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:184vw;
+  }
+
+  #Computer{
+    width:68.41vw;
+    height:42.25vw;
+    position:absolute;
+    left:30vw;
+    bottom:-3vw;
   }
 
   #Books_mid_0{
@@ -428,7 +443,7 @@ img {
     height:36.054vw;
     position:absolute;
     left:1vw;
-    bottom:-2.4vw;
+    bottom:-4.2vw;
   }
 
   #Books_mid_0_shadow{
@@ -436,7 +451,7 @@ img {
     height:39.144vw;
     position:absolute;
     left:0;
-    bottom:-4vw;
+    bottom:-5vw;
   }
 
   #Pens{
@@ -444,15 +459,15 @@ img {
     height:27vw;
     position:absolute;
     left:30vw;
-    bottom:-2.3vw;
+    bottom:-4.3vw;
   }
 
   #Woodman{
     width:18.1215vw;
     height:36.78vw;
     position:absolute;
-    right:13vw;
-    bottom:-3vw;
+    right:6vw;
+    bottom:-4vw;
     image-rendering:crisp-edges;
   }
 
@@ -461,7 +476,31 @@ img {
     height:9.3542vw;
     position:absolute;
     right:20vw;
-    bottom:-4vw;
+    bottom:-6vw;
+  }
+
+  #Slack{
+    width:90.6vw;
+    height:36.8vw;
+    position:absolute;
+    left:5.5vw;
+    bottom:1vw;
+  }
+
+  #Slack_shadow{
+    width:90vw;
+    height:18.603vw;
+    position:absolute;
+    right:5vw;
+    margin-top:20vw;
+  }
+
+  #Micro{
+    width:50.255vw;
+    height:14.779vw;
+    position:absolute;
+    right:19vw;
+    bottom:1.5vw;
   }
 }
 
