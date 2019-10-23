@@ -14,9 +14,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="js/loader.js"></script>
-  <script type="text/javascript" src="js/animations.js"></script>
-  <meta name="description" content="Freelancer on web page development based on GDL MX">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  <meta name="description" content="Pablo Fraustro - Interaction design">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <div id="overlay">
   <div id="progstat"></div>
@@ -51,6 +50,7 @@
     <div class="b2_1">
         <img class="icon_projects" src="icons/planning.svg" >
         <h2 class="sections">Academic<br>projects</h2>
+        <div id="anim_b2_1" style="position: relative; top:-6vw; z-index: 4; height: 100%;"></div>
     </div>
     <div class="b2_2">
         <img class="icon_projects" src="icons/website.svg" >
@@ -85,7 +85,6 @@
     <!-- Fourth column -->
     <div class="block_side_right"></div>
   </div>
-
 <!-- Modals -->
   <!-- Modal Slackline -->
   <div class="modal fade" id="Slackline_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -188,8 +187,8 @@
         <div class="block_woodman">
           <div class="block_woodman_inside"></div>
           <h3><br><br>CREATIVITY</h3>
-          <img src="img/shelf_elements/Books_mid_up.png" alt="Books" id="Books_mid_0">
-          <img src="img/shelf_elements/Books_mid_up_shadow.png" alt="Books' shadow" id=Books_mid_0_shadow>
+          <!-- <img src="img/shelf_elements/Books_mid_up.png" alt="Books" id="Books_mid_0">
+          <img src="img/shelf_elements/Books_mid_up_shadow.png" alt="Books' shadow" id=Books_mid_0_shadow> -->
 
           <img src="img/shelf_elements/Woodman.png" alt="Woodman" id="Woodman">
 
@@ -203,7 +202,7 @@
         <div class="block_micro">
           <!-- <img src="img/shelf_elements/Micro.png" alt="Microcontrollers" id="Micro"> -->
           <h3><br>ENGINEERING BACKGROUND</h3>
-          <img src="img/shelf_elements/Books_left.png" alt="Books" id="Books_left">
+          <!-- <img src="img/shelf_elements/Books_left.png" alt="Books" id="Books_left"> -->
         </div>
         <div class="block_slack">
           <h3>MORE</h3>
@@ -211,6 +210,8 @@
           <img src="img/shelf_elements/Slack_shadow.png" alt="Slacklines shadow" id="Slack_shadow">
         </div>
   </div>
-
+<script src="js/lottie.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js" integrity="sha256-Z6O4M7tqzCtU4AEYZT3+moexyqFde5vZNka/gcaixa0=" crossorigin="anonymous"></script> -->
+<script type="text/javascript" src="js/animations.js"></script>
 </body>
 </html>

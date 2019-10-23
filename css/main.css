@@ -29,7 +29,8 @@ body{
   .sections{
   font-size:2vw;
   color: white;
-  font-weight: 400; 
+  font-weight: 300; 
+  z-index: 5;
 }
 
 .grid{
@@ -54,6 +55,7 @@ body{
 
 .icon_projects{
   overflow: hidden;
+  z-index:5;
 }
 
 /* Measurings from Photoshop
@@ -216,13 +218,13 @@ NOTE: All is referenced to width of the screen
 
 .b2_1 h2{
   position:absolute;
-  top: 2.5vw;
+  top: 3vw;
   right:9vw;
 }
 
 .b2_2 h2{
   position:absolute;
-  top: 2vw;
+  top: 2.5vw;
   right:10.8vw;
 }
 
@@ -237,8 +239,8 @@ NOTE: All is referenced to width of the screen
 
 .b2_3 h2{
   position:absolute;
-  top: 1.5vw;
-  right:5vw;
+  top: 2vw;
+  right:5.8vw;
 }
 
 .b2_3 .icon_projects{
@@ -418,7 +420,7 @@ NOTE: All is referenced to width of the screen
 /*Hover effects*/
 
 
-.block_slack:hover {
+/* .block_slack:hover {
   cursor:pointer;
   transition-duration: 0.5s;
   background-color: rgba(255,255,255,.1);
@@ -429,14 +431,14 @@ NOTE: All is referenced to width of the screen
   transition-duration: 0.5s;
   background-color: rgba(255,255,255,.1);
   box-shadow: .5vw -,5vw 1vw .1vw #fff;
-}
+} */
 
-img:not(#Computer_ON):not(#Computer):not(#Name):not(#Papers):not(#Books_mid_0_shadow):hover{
+/* img:not(#Computer_ON):not(#Computer):not(#Name):not(#Papers):not(#Books_mid_0_shadow):hover{
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-}
+} */
 
 img {
     /*image-rendering: optimizeSpeed;             /*                     */*/
@@ -448,7 +450,7 @@ img {
     /*image-rendering: optimize-contrast;         /* CSS3 Proposed       */*/
     /*-ms-interpolation-mode: nearest-neighbor;   /* IE8+                */*/
     }
-
+/* 
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -465,7 +467,7 @@ img {
   40%, 60% {
     transform: translate3d(3px, 0, 0);
   }
-}
+} */
 
 /* .block_micro:hover {
   cursor:pointer;
