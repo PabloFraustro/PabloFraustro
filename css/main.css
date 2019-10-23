@@ -4,6 +4,9 @@
   padding:0;
 }
 
+#Layer_1{
+  overflow:hidden;
+}
 body{
   margin:0;
   -webkit-boxsizing: border-box;
@@ -11,7 +14,6 @@ body{
   -ms-boxsizing: border-box;
   -o-boxsizing: border-box;
   box-sizing: border-box;
-  height: 75vw;
   overflow-y: scroll;
 }
 
@@ -50,7 +52,9 @@ body{
   margin-top:-8vw;
 }
 
-
+.icon_projects{
+  overflow: hidden;
+}
 
 /* Measurings from Photoshop
 Original photo : width = 4770px, height=3577px
@@ -205,6 +209,7 @@ NOTE: All is referenced to width of the screen
   fill: white;
   position:relative;
   left:9vw;
+  width:6vw;
   top:3.7vw;
 
 }
@@ -224,6 +229,7 @@ NOTE: All is referenced to width of the screen
 .b2_2 .icon_projects{
   fill: white;
   position:relative;
+  width:6vw;
   left:9vw;
   top:3vw;
 
@@ -237,9 +243,10 @@ NOTE: All is referenced to width of the screen
 
 .b2_3 .icon_projects{
   fill: white;
-  position:relative;
+  width:6vw;
+  position:absolute;
   left:9vw;
-  top:2vw;
+  top:1.8vw;
 
 }
 
@@ -251,11 +258,13 @@ NOTE: All is referenced to width of the screen
 
 .b2_4 .icon_projects{
   fill: white;
-  position:relative;
-  left:8.8vw;
-  top:2.5vw;
-
+  width:6vw;
+  position:absolute;
+  left:9vw;
+  top:4vw;
 }
+
+
 /*Third column ---------------------- */
 
 
@@ -458,7 +467,7 @@ img {
   }
 }
 
-.block_micro:hover {
+/* .block_micro:hover {
   cursor:pointer;
   transition-duration: 0.5s;
   background-color: rgba(255,255,255,.1);
@@ -469,7 +478,158 @@ img {
   transition-duration: 0.5s;
   background-color: rgba(255,255,255,.2);
   box-shadow: .5vw -,5vw 1vw .1vw #fff;
+} */
+
+@media (max-aspect-ratio:3/2){
+  *{
+    margin-top:0;
+  }
+
+  body .grid{
+    display:none;
+  }
+  body .mobile_version{
+   display:flex;
+  }
+
+  .mobile_version h1{
+    padding:2vw;
+    margin-top:0vw;
+    font-size:15vw;
+    font-weight: 600;
+    color:white;
+  }
+
+  .mobile_version h3{
+    font-family: "Open Sans",sans-serif;
+    padding:9vw 2vw;
+    margin-top:3vw;
+    margin-left:45vw;
+    font-size:7vw;
+    font-weight:300;
+    /*font-style: italic*/
+    color:white;
+    z-index:0;
+  }
+
+  .block_slack h3{
+    margin-left:65vw;
+  }
+
+  .block_micro h3{
+    margin-top:-1vw;
+  }
+
+  .block_computer{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:107vw;
+  }
+
+  .block_woodman{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:69vw;
+  }
+
+  .block_micro{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:147vw;
+  }
+
+  .block_slack{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:180vw;
+  }
+
+  #Computer{
+    width:68.41vw;
+    height:42.25vw;
+    position:absolute;
+    left:30vw;
+    bottom:-3vw;
+  }
+
+  #Books_0{
+    width:27.077vw;
+    height:36.054vw;
+    position:absolute;
+    left:2vw;
+    bottom:-3.4vw;
+  }
+
+  #Books_mid_0_shadow{
+    width:9.941vw;
+    height:39.144vw;
+    position:absolute;
+    left:0;
+    bottom:-5vw;
+  }
+
+  #Pens{
+    width:18.582vw;
+    height:27vw;
+    position:absolute;
+    left:20vw;
+    bottom:-1vw;
+  }
+
+  #Woodman{
+    width:18.1215vw;
+    height:36.78vw;
+    position:absolute;
+    left:25vw;
+    bottom:-4vw;
+    image-rendering:crisp-edges;
+  }
+
+  #Papers{
+    width:30.419vw;
+    height:9.3542vw;
+    position:absolute;
+    left:10vw;
+    bottom:-3.5vw;
+  }
+
+  #Slack{
+    width:78.6vw;
+    height:32.8vw;
+    position:absolute;
+    left:6vw;
+    bottom:-4vw;
+  }
+
+  #Slack_shadow{
+    width:60vw;
+    height:5.603vw;
+    position:absolute;
+    left:2vw;
+    margin-top:-.5vw;
+  }
+
+  #Books_left{
+    width:50.33vw;
+    height:33.5vw;
+    position:absolute;
+    left:2vw;
+    bottom:-1vw;
+  }
+
+  #Micro{
+    width:50.255vw;
+    height:14.779vw;
+    position:absolute;
+    right:19vw;
+    bottom:1.5vw;
+  }
 }
+
 
 /*Mobile versions*/
 .mobile_version{
@@ -686,3 +846,4 @@ img {
     font-size:40px;
   }
 }
+
