@@ -19,20 +19,16 @@ body{
   font-size:3vw;
   color:white;
   position: absolute;
-  top:6.5vw;
-  left:10.5vw;
+  top:7.5vw;
+  left:11vw;
   font-weight: 700;
 }
 
-.grid h2{
-  font-size:1.5vw;
-  color:white;
-  position: absolute;
-  top:13.5vw;
-  left:10.5vw;
-  font-weight: 2x00;
+  .sections{
+  font-size:2vw;
+  color: white;
+  font-weight: 400; 
 }
-
 
 .grid{
   width:100%;
@@ -64,108 +60,108 @@ Rechanged dimensions to : width = 1440px , height =1080px
 NOTE: All is referenced to width of the screen
 */
 
-/*Column 1*/
+/*Left clean column */
 .block_side_left{
   grid-row:1/76;
   grid-column: 1/2;
 }
-/*Column 2*/
-.blank_col2{
+/*Column 1*/
+.b1_0{
   grid-column:2/3;
   grid-row:1/15;
   position:relative;
 }
 
-.block_computer{
+.b1_1{
   grid-row: 16/40;
   grid-column:2/3;
   position:relative;
 }
 
-.block_books_left{
+.b1_2{
   grid-row: 40/54;
   grid-column:2/3;
   position:relative;
 }
-.blank_col2_2{
+.b1_3{
   grid-row:2/3;
   grid-row:54/76;
+  position:relative;
 }
-/*Column 3*/
-.blank_col3{
+/*Column 2*/
+.b2_0{
   grid-column:3/4;
   grid-row:1/25;
+  position:relative;
 }
-.block_woodman{
+.b2_1{
   grid-column:3/4;
   grid-row:25/38;
   position:relative;
-  transition-duration: 0.5s;
 }
 
-.block_ukulele{
+.b2_2{
   grid-column:3/4;
   grid-row:38/51;
   position:relative;
+ 
 }
 
-.block_books_middle{
+.b2_3{
   grid-column:3/4;
   grid-row:51/64;
   position:relative;
 }
 
-.blank_col3_2{
+.b2_4{
   grid-column: 3/4;
   grid-row:64/76;
+  position:relative;
 }
 
-/*Fourth column*/
-.blank_col4{
+/*Third column*/
+.b3_0{
   grid-column:4/5;
   grid-row:1/15;
+  position:relative;
 }
 
-.block_plant{
+.b3_1{
   grid-column:4/5;
   grid-row:15/29;
   position:relative;
 }
 
-.block_micro{
+.b3_2{
   grid-column:4/5;
   grid-row:29/44;
   position:relative;
   transition-duration: 0.5s;
 }
 
-.block_slack{
+.b3_3{
   grid-column:4/5;
   grid-row:44/58;
   transition-duration: 0.5s;
+  position:relative;
 }
 
-.blank_col4_2{
+.b3_4{
   grid-column:4/5;
   grid-row:58/76;
+  position:relative;
 }
 
-/*.Fifth column*/
+
+
+/*Fourth column*/
 .block_side_right{
   grid-row:1/76;
   grid-column: 5/6;
+  position:relative;
 }
 
 /*-------------------Shelf elements----------------------------------------*/
-#Name{
-  width: 56.35vw;
-  height: 9.2vw;
-  position:absolute;
-  left:0px;
-  top:5vw;
-  overflow: visible;
-  z-index: 2;
-}
 
 /*First column*/
 #Computer{
@@ -185,98 +181,140 @@ NOTE: All is referenced to width of the screen
   display:none;
 }
 
-#Books_left{
+#Books_0{
+  width:18.82vw;
+  height:13.75vw;
+  position:absolute;
+  left:4vw;
+  top:1vw;
+  z-index: 2;
+}
+
+/*Second column  ----------------------  */
+
+.about_me{
+  font-size:2.5vw;
+  color:#34FFC1;
+  position: absolute;
+  bottom:.2vw;
+  right:3vw;
+  font-weight: 700;
+}
+
+.b2_1 .icon_projects{
+  fill: white;
+  position:relative;
+  left:9vw;
+  top:3.7vw;
+
+}
+
+.b2_1 h2{
+  position:absolute;
+  top: 2.5vw;
+  right:9vw;
+}
+
+.b2_2 h2{
+  position:absolute;
+  top: 2vw;
+  right:10.8vw;
+}
+
+.b2_2 .icon_projects{
+  fill: white;
+  position:relative;
+  left:9vw;
+  top:3vw;
+
+}
+
+.b2_3 h2{
+  position:absolute;
+  top: 1.5vw;
+  right:5vw;
+}
+
+.b2_3 .icon_projects{
+  fill: white;
+  position:relative;
+  left:9vw;
+  top:2vw;
+
+}
+
+.b2_4 h2{
+  position:absolute;
+  top: 1.5vw;
+  right:10.8vw;
+}
+
+.b2_4 .icon_projects{
+  fill: white;
+  position:relative;
+  left:8.8vw;
+  top:2.5vw;
+
+}
+/*Third column ---------------------- */
+
+
+#Ukulele{
+  width:28.67vw;
+  height:10.77vw;
+  position:absolute;
+  right:0vw;
+  top:2.5vw;
+  z-index: 1;
+}
+
+#Books_1{
   width:17.33vw;
   height:13.5vw;
   position:absolute;
-  left:1vw;
-  bottom:-1vw;
-}
-
-/*Second column*/
-
-#Books_mid_0{
-  width:9.077vw;
-  height:12.054vw;
-  position:absolute;
-  left:1vw;
-  bottom:-.2vw;
-}
-
-#Books_mid_0_shadow{
-  width:3.941vw;
-  height:13.144vw;
-  position:absolute;
-  left:0;
-  bottom:-1vw;
+  left:.2vw;
+  bottom:-1.2vw;
 }
 
 #Pens{
   width:6.582vw;
   height:9vw;
   position:absolute;
-  left:10vw;
-  bottom:-.2vw;
-}
-
-#Woodman{
-  width:6.1215vw;
-  height:12.78vw;
-  position:absolute;
-  right:10.5vw;
-  bottom:-.2vw;
-  image-rendering:crisp-edges;
+  right:5vw;
+  bottom:-.7vw;
 }
 
 #Papers{
   width:10.419vw;
   height:3.3542vw;
   position:absolute;
-  right:4vw;
-  bottom:-.8vw;
+  right:18vw;
+  bottom:-.4vw;
 }
 
-#Ukulele{
-  width:28.67vw;
-  height:10.77vw;
+#Woodman{
+  width:6.1215vw;
+  height:12.78vw;
   position:absolute;
-  right:1vw;
+  right:14vw;
   bottom:-.2vw;
+  image-rendering:crisp-edges;
   z-index: 1;
 }
 
-#Ukulele_shadow{
-  width:30.104vw;
-  height:2.914vw;
+#Books_2{
+  width:9.077vw;
+  height:12.054vw;
   position:absolute;
-  left:5vw;
-  bottom:-.3vw;
-  z-index:0;
+  left:18vw;
+  bottom:.2vw;
 }
 
-#Books_mid_1{
-  width:18.82vw;
-  height:13.75vw;
-  position:absolute;
-  left:16.5vw;
-  bottom:-.2vw;
-  z-index: 2;
-}
-
-#Books_mid_1_shadow{
-  width:21.34vw;
-  height:6.561vw;
-  position:absolute;
-  right:-.5vw;
-  bottom:-2vw;
-  z-index: 0;
-}
-/*Third column*/
 #Plant{
   width:23.41vw;
   height:15.26vw;
   position:absolute;
-  right:4vw;
+  right:-2.5vw;
   bottom:-.7vw;
 }
 
@@ -284,26 +322,18 @@ NOTE: All is referenced to width of the screen
   width:14.255vw;
   height:4.779vw;
   position:absolute;
-  right:11vw;
-  bottom:0vw;
+  right:4vw;
+  bottom:-.2vw;
+  z-index: 3;
 }
 
 #Slack{
   width:29.6vw;
   height:12.8vw;
   position:absolute;
-  left:64vw;
+  left:0vw;
   margin-top:2vw;
   z-index: 1;
-}
-
-#Slack_shadow{
-  width:32vw;
-  height:6.603vw;
-  position:absolute;
-  right:5vw;
-  margin-top:9vw;
-  z-index:0;
 }
 
 /*Modals*/
@@ -576,7 +606,7 @@ img {
     bottom:-3vw;
   }
 
-  #Books_mid_0{
+  #Books_0{
     width:27.077vw;
     height:36.054vw;
     position:absolute;
