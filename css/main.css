@@ -1,0 +1,658 @@
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  margin:0;
+  -webkit-boxsizing: border-box;
+  -moz-boxsizing: border-box;
+  -ms-boxsizing: border-box;
+  -o-boxsizing: border-box;
+  box-sizing: border-box;
+  height: 75vw;
+  overflow-y: scroll;
+}
+
+.grid h1{
+  font-size:3vw;
+  color:white;
+  position: absolute;
+  top:6.5vw;
+  left:10.5vw;
+  font-weight: 700;
+}
+
+.grid h2{
+  font-size:1.5vw;
+  color:white;
+  position: absolute;
+  top:13.5vw;
+  left:10.5vw;
+  font-weight: 2x00;
+}
+
+
+.grid{
+  width:100%;
+  -webkit-background-image: url("../img/bg.jpg");
+  -moz-background-image: url("../img/bg.jpg");
+  -ms-background-image: url("../img/bg.jpg");
+  -o-background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg.jpg");
+
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display:grid;
+  grid-template-columns: 7% 22% 35% 29% 7%;
+  grid-auto-rows: 1vw;
+  z-index:-1;
+  margin-top:-8vw;
+}
+
+
+
+/* Measurings from Photoshop
+Original photo : width = 4770px, height=3577px
+
+//update Oct 23,2019
+Rechanged dimensions to : width = 1440px , height =1080px
+NOTE: All is referenced to width of the screen
+*/
+
+/*Column 1*/
+.block_side_left{
+  grid-row:1/76;
+  grid-column: 1/2;
+}
+/*Column 2*/
+.blank_col2{
+  grid-column:2/3;
+  grid-row:1/15;
+  position:relative;
+}
+
+.block_computer{
+  grid-row: 16/40;
+  grid-column:2/3;
+  position:relative;
+}
+
+.block_books_left{
+  grid-row: 40/54;
+  grid-column:2/3;
+  position:relative;
+}
+.blank_col2_2{
+  grid-row:2/3;
+  grid-row:54/76;
+}
+/*Column 3*/
+.blank_col3{
+  grid-column:3/4;
+  grid-row:1/25;
+}
+.block_woodman{
+  grid-column:3/4;
+  grid-row:25/38;
+  position:relative;
+  transition-duration: 0.5s;
+}
+
+.block_ukulele{
+  grid-column:3/4;
+  grid-row:38/51;
+  position:relative;
+}
+
+.block_books_middle{
+  grid-column:3/4;
+  grid-row:51/64;
+  position:relative;
+}
+
+.blank_col3_2{
+  grid-column: 3/4;
+  grid-row:64/76;
+}
+
+/*Fourth column*/
+.blank_col4{
+  grid-column:4/5;
+  grid-row:1/15;
+}
+
+.block_plant{
+  grid-column:4/5;
+  grid-row:15/29;
+  position:relative;
+}
+
+.block_micro{
+  grid-column:4/5;
+  grid-row:29/44;
+  position:relative;
+  transition-duration: 0.5s;
+}
+
+.block_slack{
+  grid-column:4/5;
+  grid-row:44/58;
+  transition-duration: 0.5s;
+}
+
+.blank_col4_2{
+  grid-column:4/5;
+  grid-row:58/76;
+}
+
+/*.Fifth column*/
+.block_side_right{
+  grid-row:1/76;
+  grid-column: 5/6;
+}
+
+/*-------------------Shelf elements----------------------------------------*/
+#Name{
+  width: 56.35vw;
+  height: 9.2vw;
+  position:absolute;
+  left:0px;
+  top:5vw;
+  overflow: visible;
+  z-index: 2;
+}
+
+/*First column*/
+#Computer{
+  width:22.41vw;
+  height:14.25vw;
+  position:absolute;
+  bottom:-.7vw;
+  left:0;
+}
+
+#Computer_ON{
+  width:15.49vw;
+  height:10.20vw;
+  position:absolute;
+  bottom:1.65vw;
+  left:3.4vw;
+  display:none;
+}
+
+#Books_left{
+  width:17.33vw;
+  height:13.5vw;
+  position:absolute;
+  left:1vw;
+  bottom:-1vw;
+}
+
+/*Second column*/
+
+#Books_mid_0{
+  width:9.077vw;
+  height:12.054vw;
+  position:absolute;
+  left:1vw;
+  bottom:-.2vw;
+}
+
+#Books_mid_0_shadow{
+  width:3.941vw;
+  height:13.144vw;
+  position:absolute;
+  left:0;
+  bottom:-1vw;
+}
+
+#Pens{
+  width:6.582vw;
+  height:9vw;
+  position:absolute;
+  left:10vw;
+  bottom:-.2vw;
+}
+
+#Woodman{
+  width:6.1215vw;
+  height:12.78vw;
+  position:absolute;
+  right:10.5vw;
+  bottom:-.2vw;
+  image-rendering:crisp-edges;
+}
+
+#Papers{
+  width:10.419vw;
+  height:3.3542vw;
+  position:absolute;
+  right:4vw;
+  bottom:-.8vw;
+}
+
+#Ukulele{
+  width:28.67vw;
+  height:10.77vw;
+  position:absolute;
+  right:1vw;
+  bottom:-.2vw;
+  z-index: 1;
+}
+
+#Ukulele_shadow{
+  width:30.104vw;
+  height:2.914vw;
+  position:absolute;
+  left:5vw;
+  bottom:-.3vw;
+  z-index:0;
+}
+
+#Books_mid_1{
+  width:18.82vw;
+  height:13.75vw;
+  position:absolute;
+  left:16.5vw;
+  bottom:-.2vw;
+  z-index: 2;
+}
+
+#Books_mid_1_shadow{
+  width:21.34vw;
+  height:6.561vw;
+  position:absolute;
+  right:-.5vw;
+  bottom:-2vw;
+  z-index: 0;
+}
+/*Third column*/
+#Plant{
+  width:23.41vw;
+  height:15.26vw;
+  position:absolute;
+  right:4vw;
+  bottom:-.7vw;
+}
+
+#Micro{
+  width:14.255vw;
+  height:4.779vw;
+  position:absolute;
+  right:11vw;
+  bottom:0vw;
+}
+
+#Slack{
+  width:29.6vw;
+  height:12.8vw;
+  position:absolute;
+  left:64vw;
+  margin-top:2vw;
+  z-index: 1;
+}
+
+#Slack_shadow{
+  width:32vw;
+  height:6.603vw;
+  position:absolute;
+  right:5vw;
+  margin-top:9vw;
+  z-index:0;
+}
+
+/*Modals*/
+
+.modal{
+  font-family: "Open Sans",sans-serif;
+  font-size: 17px;
+}
+.modal h5{
+  font-size:45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal i{
+  font-weight: 300;
+  font-style: italic;
+  font-size:20px;
+}
+
+
+#Computer_modal form{
+  text-align: left;
+  margin:20px;
+  padding:1vw;
+  margin-left:-1vw;
+}
+
+/*#Computer_modal form input{
+  margin: 0 0 20px 25px;
+}*/
+
+#Computer_modal form  input[type="text"],
+#Computer_modal form input[type="email"],
+#Computer_modal form textarea{
+  border: 2px solid #cecece;
+  margin: 0 0 15px 15px;
+  border-radius: 4px;
+  padding : 20px 20px;
+  font-size: 15px;
+  width:100%;
+  font-family: "Open Sans",sans-serif;
+  font-size: 17px;
+}
+
+#Computer_modal form  textarea{
+  /*width: 100%;*/
+  height: 100px;
+  min-width:100%;
+  max-width:100%;
+  min-height:100px;
+  max-height:300px;
+  margin-bottom:15px;
+}
+
+#Computer_modal form input[type="text"]:focus,
+#Computer_modal form input[type="email"]:focus,
+#Computer_modal form textarea:focus{
+  border: 2px solid #3895ea;
+}
+
+#Computer_modal form .btn {
+  margin:auto;
+  /*background: #3895ea;*/
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius:3px;
+  padding:15px 25px;
+  cursor:pointer;
+  margin-left:1vw;
+}
+/*Hover effects*/
+
+
+.block_slack:hover {
+  cursor:pointer;
+  transition-duration: 0.5s;
+  background-color: rgba(255,255,255,.1);
+}
+
+.block_woodman:hover {
+  cursor:pointer;
+  transition-duration: 0.5s;
+  background-color: rgba(255,255,255,.1);
+  box-shadow: .5vw -,5vw 1vw .1vw #fff;
+}
+
+img:not(#Computer_ON):not(#Computer):not(#Name):not(#Papers):not(#Books_mid_0_shadow):hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+img {
+    /*image-rendering: optimizeSpeed;             /*                     */*/
+    /*image-rendering: -moz-crisp-edges;          /* Firefox             */*/
+    image-rendering: -o-optimize-contrast;            /* Opera               */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-optimize-contrast;
+    /*image-rendering: optimize-contrast;         /* CSS3 Proposed       */*/
+    /*-ms-interpolation-mode: nearest-neighbor;   /* IE8+                */*/
+    }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+.block_micro:hover {
+  cursor:pointer;
+  transition-duration: 0.5s;
+  background-color: rgba(255,255,255,.1);
+  box-shadow: .5vw -,5vw 1vw .1vw #fff;
+}
+
+.block_computer:hover {
+  transition-duration: 0.5s;
+  background-color: rgba(255,255,255,.2);
+  box-shadow: .5vw -,5vw 1vw .1vw #fff;
+}
+
+/*Mobile versions*/
+.mobile_version{
+  display: none;
+  width:100%;
+  height:220vw;
+  -webkit-background-image: url("../img/bg_mobile.jpg");
+  -moz-background-image: url("../img/bg_mobile.jpg");
+  -ms-background-image: url("../img/bg_mobile.jpg");
+  -o-background-image: url("../img/bg_mobile.jpg");
+  background-image: url("../img/bg_mobile.jpg");
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Loader */
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+   /* This only works with JavaScript,
+   		   if it's not present, don't show loader */
+/*.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; z-index: 50;}*/
+
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(0,0,0,0.9);
+  transition: 1s 0.4s;
+}
+#progress{
+  height:1px;
+  background:#fff;
+  position:absolute;
+  width:0;                /* will be increased by JS */
+  top:50%;
+}
+#progstat{
+  font-size:1.5em;
+  font-family: "Open Sans",sans-serif;
+  letter-spacing: 3px;
+  position:absolute;
+  top:50%;
+  margin-top:-40px;
+  width:100%;
+  text-align:center;
+  color:#fff;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 650px){
+  *{
+    margin-top:0;
+  }
+
+  body .grid{
+    display:none;
+  }
+  body .mobile_version{
+   display:flex;
+  }
+
+  .mobile_version h1{
+    padding:2vw;
+    margin-top:0vw;
+    font-size:15vw;
+    font-weight: 600;
+    color:white;
+  }
+
+  .mobile_version h3{
+    font-family: "Open Sans",sans-serif;
+    padding:9vw 2vw;
+    margin-top:3vw;
+    margin-left:45vw;
+    font-size:7vw;
+    font-weight:300;
+    /*font-style: italic*/
+    color:white;
+    z-index:0;
+  }
+
+  .block_slack h3{
+    margin-left:65vw;
+  }
+
+  .block_micro h3{
+    margin-top:-1vw;
+  }
+
+  .block_computer{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:107vw;
+  }
+
+  .block_woodman{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:69vw;
+  }
+
+  .block_micro{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:147vw;
+  }
+
+  .block_slack{
+    width:100%;
+    height:37vw;
+    position:absolute;
+    top:180vw;
+  }
+
+  #Computer{
+    width:68.41vw;
+    height:42.25vw;
+    position:absolute;
+    left:30vw;
+    bottom:-3vw;
+  }
+
+  #Books_mid_0{
+    width:27.077vw;
+    height:36.054vw;
+    position:absolute;
+    left:2vw;
+    bottom:-3.4vw;
+  }
+
+  #Books_mid_0_shadow{
+    width:9.941vw;
+    height:39.144vw;
+    position:absolute;
+    left:0;
+    bottom:-5vw;
+  }
+
+  #Pens{
+    width:18.582vw;
+    height:27vw;
+    position:absolute;
+    left:20vw;
+    bottom:-1vw;
+  }
+
+  #Woodman{
+    width:18.1215vw;
+    height:36.78vw;
+    position:absolute;
+    left:25vw;
+    bottom:-4vw;
+    image-rendering:crisp-edges;
+  }
+
+  #Papers{
+    width:30.419vw;
+    height:9.3542vw;
+    position:absolute;
+    left:10vw;
+    bottom:-3.5vw;
+  }
+
+  #Slack{
+    width:78.6vw;
+    height:32.8vw;
+    position:absolute;
+    left:6vw;
+    bottom:-4vw;
+  }
+
+  #Slack_shadow{
+    width:60vw;
+    height:5.603vw;
+    position:absolute;
+    left:2vw;
+    margin-top:-.5vw;
+  }
+
+  #Books_left{
+    width:50.33vw;
+    height:33.5vw;
+    position:absolute;
+    left:2vw;
+    bottom:-1vw;
+  }
+
+  #Micro{
+    width:50.255vw;
+    height:14.779vw;
+    position:absolute;
+    right:19vw;
+    bottom:1.5vw;
+  }
+}
+
+/* Really small devices */
+@media only screen and (max-width: 400px){
+  #Computer_modal .modal-title{
+    font-size:40px;
+  }
+}
