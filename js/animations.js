@@ -59,20 +59,69 @@ $(document).ready(function() {
 // });
 
 var anim_b2_1;
+var anim_b2_2;
+var anim_b2_3;
+var anim_b2_4;
 
 $('.b2_1').mouseenter(function(){
   $(".b2_1").css("cursor","pointer");
   anim_b2_1 = bodymovin.loadAnimation({
     container: document.getElementById('anim_b2_1'),
     renderer: 'svg',
-    loop: true,
+    loop: false,
     autoplay:true,
-    path: 'animation_test.json'
+    path: 'js/animation_1/data.json'
   })
 });
 
 $('.b2_1').mouseleave(function(){
   anim_b2_1.destroy();
+});
+
+$('.b2_2').mouseenter(function(){
+  $(".b2_2").css("cursor","pointer");
+  anim_b2_2 = bodymovin.loadAnimation({
+    container: document.getElementById('anim_b2_2'),
+    renderer: 'svg',
+    loop: false,
+    autoplay:true,
+    path: 'js/animation_2/data_2.json'
+  })
+});
+
+$('.b2_2').mouseleave(function(){
+  anim_b2_2.destroy();
+});
+
+
+$('.b2_3').mouseenter(function(){
+  $(".b2_3").css("cursor","pointer");
+  anim_b2_3 = bodymovin.loadAnimation({
+    container: document.getElementById('anim_b2_3'),
+    renderer: 'svg',
+    loop: false,
+    autoplay:true,
+    path: 'js/animation_3/data_3.json'
+  })
+});
+
+$('.b2_3').mouseleave(function(){
+  anim_b2_3.destroy();
+});
+
+$('.b2_4').mouseenter(function(){
+  $(".b2_4").css("cursor","pointer");
+  anim_b2_4 = bodymovin.loadAnimation({
+    container: document.getElementById('anim_b2_4'),
+    renderer: 'svg',
+    loop: false,
+    autoplay:true,
+    path: 'js/animation_4/data_4.json'
+  })
+});
+
+$('.b2_4').mouseleave(function(){
+  anim_b2_4.destroy();
 });
 
 
