@@ -1,10 +1,23 @@
 
 $(document).ready(function() {
 
-// //Slack effects
-//   $(".block_slack").on("click",function(){
-//     $("#Slackline_modal").modal('toggle');
-//   });
+// Modals
+
+ $(".b2_1").on("click",function(){
+    $("#b2_1_modal").modal('toggle');
+  });
+
+  $(".b2_2").on("click",function(){
+    $("#b2_2_modal").modal('toggle');
+  });
+
+  $(".b2_3").on("click",function(){
+    $("#b2_3_modal").modal('toggle');
+  });
+
+  $(".b2_4").on("click",function(){
+    $("#b2_4_modal").modal('toggle');
+  });
 
 //   //Computer effects
 
