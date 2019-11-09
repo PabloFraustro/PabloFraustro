@@ -1,6 +1,53 @@
 
 $(document).ready(function() {
 
+  // modal content managment
+
+  //projects
+
+  //init
+  $('#midi_section').hide();
+  $('#kuniyoshi_section').hide();
+  $('#hand_section').hide();
+
+
+  $(".li_midi").click(function(){
+    
+    window.scrollTo(0,0);
+    $('#kuniyoshi_section').hide();
+    $('#hand_section').hide();
+    if($('#midi_section').is(':visible')){
+      $('#midi_section').hide();
+    }
+    else{
+      $('#midi_section').show();
+    }
+  });
+
+  $(".li_kuniyoshi").click(function(){
+    window.scrollTo(0,0);
+    $('#midi_section').hide();
+    $('#hand_section').hide();
+    if($('#kuniyoshi_section').is(':visible')){
+      $('#kuniyoshi_section').hide();
+    }
+    else{
+      $('#kuniyoshi_section').show();
+    }
+  });
+
+  $(".li_hand").click(function(){
+    window.scrollTo(0,0);
+    $('#midi_section').hide();
+    $('#kuniyoshi_section').hide();
+    if($('#hand_section').is(':visible')){
+      $('#hand_section').hide();
+    }
+    else{
+      $('#hand_section').show();
+    }
+  });
+
 // Modals
 
  $(".b2_1").on("click",function(){
@@ -19,6 +66,18 @@ $(document).ready(function() {
     $("#b2_4_modal").modal('toggle');
   });
 
+$(".fancybox").fancybox({
+    openEffect: "none",
+    closeEffect: "none"
+});
+
+$(".zoom").hover(function(){
+
+$(this).addClass('transition');
+}, function(){
+    
+$(this).removeClass('transition');
+});
 //   //Computer effects
 
 //   $(".block_computer").hover(function(){

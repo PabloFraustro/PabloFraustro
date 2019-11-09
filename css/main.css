@@ -1,4 +1,47 @@
+/* 0 General settings */
 
+.green{
+  background-color:#6fb936;
+}
+        .thumb{
+            margin-bottom: 30px;
+        }
+        
+        .page-top{
+            margin-top:85px;
+        }
+
+   
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+        
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+    .modal-header {
+   
+     border-bottom: none;
+}
+    .modal-title {
+        color:#000;
+    }
+    .modal-footer{
+      display:none;  
+    }
+    
+ /* 1 GENERAL CSS SETTINGS */
 *{
   margin:0;
   padding:0;
@@ -57,6 +100,96 @@ body{
   overflow: hidden;
   z-index:5;
 }
+
+/* 1.1 MODALS */
+
+#b2_1_modal .modal_title_rotate{
+  transform: rotate(-180deg);
+  writing-mode: vertical-lr;
+  margin-top:-25%;
+  color:#34FFC1;
+}
+
+#b2_2_modal .modal_title_rotate{
+  transform: rotate(-180deg);
+  writing-mode: vertical-lr;
+  margin-top:-25%;
+  color:#8F476B;
+}
+
+#b2_3_modal .modal_title_rotate{
+  transform: rotate(-180deg);
+  writing-mode: vertical-lr;
+  margin-top:-25%;
+  color:#6DA344;
+}
+
+#b2_4_modal modal_title_rotate{
+  /* transform: rotate(-180deg);
+  writing-mode: vertical-lr; */
+  /* margin-top:-25%; */
+  color:#C199FF;
+}
+
+.modal_title{
+  margin-left:25%;
+}
+
+#b2_1_modal .modal_icon{
+  margin-left:40%;
+  margin-top:-105%;
+}
+
+#b2_2_modal .modal_icon{
+  margin-left:40%;
+  margin-top:-75%;
+}
+
+.projects_list{
+  font-size:20px;
+  margin-top:5%;
+  margin-left:25%;
+}
+
+.li_midi:hover{
+  color:#34FFC1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.li_kuniyoshi:hover{
+  color:#34FFC1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.li_hand:hover{
+  color:#34FFC1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+#b2_2_modal .projects_list li:hover{
+  color:#8F476B;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#b2_3_modal .projects_list li:hover{
+  color:#8F476B;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#b2_4_modal .projects_list li:hover{
+  color:#8F476B;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* 2 COLUMNS */
+
 
 /* Measurings from Photoshop
 Original photo : width = 4770px, height=3577px
@@ -240,7 +373,7 @@ NOTE: All is referenced to width of the screen
 .b2_3 h2{
   position:absolute;
   top: 1.7vw;
-  right:9vw;
+  right:11vw;
 }
 
 .b2_3 .icon_projects{
@@ -413,7 +546,6 @@ NOTE: All is referenced to width of the screen
   cursor:pointer;
   margin-left:1vw;
 }
-/*Hover effects*/
 
 
 /* .block_slack:hover {

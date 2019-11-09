@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="js/loader.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
   <meta name="description" content="Pablo Fraustro - Interaction design">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
@@ -49,7 +50,7 @@
     </div>
     <div class="b2_1">
         <img class="icon_projects" src="icons/planning.svg" >
-        <h2 class="sections">Academic<br>projects</h2>
+        <h2 class="sections">Concept<br>projects</h2>
         <div id="anim_b2_1" style="position: relative; top:-6vw; z-index: 4; height: 100%; padding:.6vw"></div>
     </div>
     <div class="b2_2">
@@ -59,14 +60,14 @@
     </div>
     <div class="b2_3">
       <img class="icon_projects" src="icons/wacom.svg" >
-      <h2 class="sections">Illustration<br>& animation</h2>  
+      <h2 class="sections">More<br>than work</h2>  
       <div id="anim_b2_3" style="position: relative; top:-.3vw; z-index: 4; height: 100%; padding:.6vw"></div>
     </div>
-    <div class="b2_4">
+    <!-- <div class="b2_4">
         <img class="icon_projects" src="icons/rope.svg" >
-      <h2 class="sections">Life<br>balance</h2> 
+      <h2 class="sections">My life<br>balance</h2> 
       <div id="anim_b2_4" style="position: relative; top:0vw; z-index: 4; height: 100%;padding:.1vw;margin-top:0vw;margin-bottom:1vw;"></div>
-    </div>
+    </div> -->
     <!-- Third column -->
     <div class="b3_0"></div>
     <div class="b3_1">
@@ -93,123 +94,242 @@
   <div class="modal fade" id="b2_1_modal" tabindex="-1" role="dialog" aria-labelledby="Academic Projects" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h5 class="modal-title" >Academic Projects</h5>
+          <!-- <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div> -->
+        <div class="modal-body no-border">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                    <h3 class="modal_title">projects</h3>
+                    <h3 class="modal_title_rotate">Concept</h3>
+                    <img class="icon_projects modal_icon" src="icons/black/planning.svg" >
+                    </div>
+                  <div class="col">
+                    <ol class="projects_list">
+                      <li class="li_kuniyoshi">Kuniyoshi art exhibition</li>
+                      <li class="li_midi">MIDI - Transform drawing into music</li>
+                      <li class="li_hand">Hand rehabilitation for chronic pain </li>
+                    </ol>
+                  </div>
+              </div>
+            <br><br>
+            <div id="kuniyoshi_section">           
+              <h4 style="font-style: italic;">Kuniyoshi art exhibition</h4>
+              <div class="row" style="background-color: black; padding: 5%">
+                <div class="col-md-4" style="color: #cccccc; font-weight: 200;">
+                  <br><br>
+                  <br> Based on traditional woodblock prints by Utagawa Kuniyoshi. 
+                  The concept project includes: physical installation,  projection content and interactive machines.
+                </div>
+                <div class="col-md-6">
+                  <img src="img/kuniyoshi/kuniyoshi.gif" alt="Experimental projection" width="400" style="align-content: right;justify-content: right; margin-left:3vw;">
+                </div>
+              </div>
+              <div class="row" style="padding-top:4%;">
+                  <div class="col-md-6">
+                    <img src="img/kuniyoshi/notes.jpg" alt="notes about exhibition" width=100%>
+                    </div>
+                <div class="col-md-5" style="color: #000000; font-weight: 200;align-content: center;">
+                    <br><br>
+                    My main role in the project included  exhibition structure and video content. 
+                    <br><br>
+                    The exhibition walks visitors through an experience starting from mystic foggy  landscapes to a battlefield scenario, ending on an interactive “create your woodbloock” area.
+                    <br><br><br><br>
+                    <img src="img/kuniyoshi/exhibition.jpg" alt="Kuniyoshi exhibition" style="padding-top:5%; margin-left:4vw; padding-bottom: 5%;">
+                  </div>
+              </div>
+              <div class="row" style="padding-top:4%;">
+                <div class="col-md-12" style="color: #000000; font-weight: 200;align-content: center;">
+                    <br><br>
+                    The following video represents the entrance section projection loop:
+                  </div>
+              </div>
+              <div class="row" style="padding-top:4%;">
+                  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/341168589" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+              <br>
+              <p style="float:right;" class="li_midi">Next project</p>
+            </div>
+            <div id="midi_section">           
+                <h4 style="font-style: italic;">MIDI</h4>
+                <div class="row" >
+                  <div class="col-md-4" style="color: #000000; font-weight: 200;">
+                    <br><br>
+                    <br> Based on traditional woodblock prints by Utagawa Kuniyoshi. 
+                    The concept project includes: physical installation,  projection content and interactive machines.
+                  </div>
+                  <div class="col-md-5">
+                    <img src="img/midi/midi.gif" alt="Experimental projection" width="600">
+                  </div>
+                </div>
+                <div class="row" style="padding-top:4%;">
+                    <div class="col-md-6">
+                      <img src="img/kuniyoshi/notes.jpg" alt="notes about exhibition" width=100%>
+                      </div>
+                  <div class="col-md-5" style="color: #000000; font-weight: 200;align-content: center;">
+                      <br><br>
+                      My main role in the project included  exhibition structure and video content. 
+                      <br><br>
+                      The exhibition walks visitors through an experience starting from mystic foggy  landscapes to a battlefield scenario, ending on an interactive “create your woodbloock” area.
+                      <br><br><br><br>
+                      <img src="img/kuniyoshi/exhibition.jpg" alt="Kuniyoshi exhibition" style="padding-top:5%; margin-left:4vw; padding-bottom: 5%;">
+                    </div>
+                </div>
+                <div class="row" style="padding-top:4%;">
+                  <div class="col-md-12" style="color: #000000; font-weight: 200;align-content: center;">
+                      <br><br>
+                      The following video represents the entrance section projection loop:
+                    </div>
+                </div>
+                <div class="row" style="padding-top:4%;">
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/371935901" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            <div id="hand_section">           
+                <h4 style="font-style: italic;">MIDI</h4>
+                <div class="row" style="background-color: black; padding: 5%">
+                  <div class="col-md-4" style="color: #cccccc; font-weight: 200;">
+                    <br><br>
+                    <br> Based on traditional woodblock prints by Utagawa Kuniyoshi. 
+                    The concept project includes: physical installation,  projection content and interactive machines.
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/kuniyoshi/kuniyoshi.gif" alt="Experimental projection" width="400" style="align-content: right;justify-content: right; margin-left:3vw;">
+                  </div>
+                </div>
+                <div class="row" style="padding-top:4%;">
+                    <div class="col-md-6">
+                      <img src="img/kuniyoshi/notes.jpg" alt="notes about exhibition" width=100%>
+                      </div>
+                  <div class="col-md-5" style="color: #000000; font-weight: 200;align-content: center;">
+                      <br><br>
+                      My main role in the project included  exhibition structure and video content. 
+                      <br><br>
+                      The exhibition walks visitors through an experience starting from mystic foggy  landscapes to a battlefield scenario, ending on an interactive “create your woodbloock” area.
+                      <br><br><br><br>
+                      <img src="img/kuniyoshi/exhibition.jpg" alt="Kuniyoshi exhibition" style="padding-top:5%; margin-left:4vw; padding-bottom: 5%;">
+                    </div>
+                </div>
+                <div class="row" style="padding-top:4%;">
+                  <div class="col-md-12" style="color: #000000; font-weight: 200;align-content: center;">
+                      <br><br>
+                      The following video represents the entrance section projection loop:
+                    </div>
+                </div>
+                <div class="row" style="padding-top:4%;">
+  
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/341168589" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+            </div>
+  
         </div>
-        <div class="modal-body">
-          <br><br><br><br>
-          <img src="img/kuniyoshi.gif" alt="Kuniyoshi exhibition">
-          <img src="img/midi.gif" alt="MIDI project">
-          <br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </div>
-        <div class="modal-footer">
+        <div class="modal-footer no-border">
           <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
-
-<div class="modal fade" id="b2_2_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h5 class="modal-title" >Web Development</h5>
-      </div>
-      <div class="modal-body">
-        Complete functional and beautiful projects. <br><br>
-        Please contact me at <a href="mailto:pablofraustro@gmail.com">pablofraustro@gmail.com</a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
 </div>
 
-<div class="modal fade" id="b2_3_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h5 class="modal-title" id="exampleModalLongTitle">Creative mindset</h5>
-      </div>
-      <div class="modal-body">
-        <br><br>
-        Every new project is evaluated on: visual impact ,usability, flexibility and complexity. <br><br>
-        The user's final experience is my goal, making every idea on the web functional and visually striking.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="b2_4_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h5 class="modal-title" id="exampleModalLongTitle">Into the wires</h5>
-      </div>
-      <div class="modal-body">
-        <p>
-        <br><br><i>How can technology help humankind?</i></p>
-        <br>
-        <p> This revolutionized digital world has more to offer than memory expansions, great graphics and connected leisure.
-        <br><br>
-        Communicating with computers is the first part of this revolution, the next phase requires human interaction, and is there where I plan to contribute to this world. Human interaction is expressed not just with 8-bit codified characters, it is based on emotions expressed on art, movement, gestures, silences and interaction with objects. Let us make use of this technology to express ourselves beyond time and space, let us connect among humans.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
-
-      <!-- <div class="modal fade" id="b2_1_modal" tabindex="-1" role="dialog" aria-labelledby="Academic Projects" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <h5 class="modal-title" >Academic Projects</h5>
-            </div>
-            <div class="modal-body">
-              <p>My life balance, my hobbie and mental/physical training.
-                <br><br>
-                That is, to get outside the comfort zone of my 4-wall perimeter to take a hike to the mountains with my friends, set up a highline and walk through the abism.
-                <br>
-              <iframe src="https://player.vimeo.com/video/156006058" width=100% height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="embedded_video_1"></iframe>
-                <br><br>
-                <p> I've done this for 5 years now, since the moment I realized we could set up a tight rope more than 10 m above the ground and walk it, I just knew I had to do it.</p>
-                <br>
-              <iframe src="https://player.vimeo.com/video/243046211" width=100% height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="embedded_video_2"></iframe>
-    
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>
+  <div class="modal fade" id="b2_2_modal" tabindex="-1" role="dialog" aria-labelledby="Academic Projects" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body no-border">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-2">
+                      <h3 class="modal_title">design</h3>
+                      <h3 class="modal_title_rotate">Website</h3>
+                      <img class="icon_projects modal_icon" src="icons/black/website.svg" >
+                     </div>
+                     <div class="col-md-4"></div>
+                      <div class="col-md-8 col-xs-6 thumb">
+                        <a href="http://www.digitalinteractiondesign.polimi.it/" class="fancybox" rel="ligthbox" target="_blank" rel="noopener noreferrer">
+                            <img  src="img/sites/interaction.jpg" class="zoom img-fluid "  alt="">
+                        </a>
+                      </div>
+                      
+                      <div class="col-md-4 col-xs-6 thumb">
+                        <a href="http://www.digitalinteractiondesign.polimi.it/" class="fancybox" rel="ligthbox" target="_blank" rel="noopener noreferrer">
+                            <img  src="img/sites/interaction.jpg" class="zoom img-fluid "  alt="">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+              <br><br>
+          </div>
+          <div class="modal-footer no-border">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
           </div>
         </div>
-      </div> -->
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="b2_3_modal" tabindex="-1" role="dialog" aria-labelledby="Academic Projects" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body no-border">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                    <h3 class="modal_title">& animation</h3>
+                    <h3 class="modal_title_rotate">Illustration</h3>
+                    <img class="icon_projects modal_icon" src="icons/black/website.svg" >
+                    </div>
+                  <div class="col">
+                    <ol class="projects_list">
+                      <li>Kuniyoshi art exhibition</li>
+                      <li>MIDI - Transform drawing into music</li>
+                      <li>Hand rehabilitation for chronic pain </li>
+                      <li>Trust social experiment</li>
+                    </ol>
+                  </div>
+              </div>
+            <br><br>
+        </div>
+        <div class="modal-footer no-border">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="modal fade" id="b2_4_modal" tabindex="-1" role="dialog" aria-labelledby="Academic Projects" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body no-border">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                    <h3 class="modal_title">balance</h3>
+                    <h3 class="modal_title_rotate">Life</h3>
+                    <img class="icon_projects modal_icon" src="icons/black/website.svg" >
+                    </div>
+                  <div class="col">
+                    <ol class="projects_list">
+                      <li>Kuniyoshi art exhibition</li>
+                      <li>MIDI - Transform drawing into music</li>
+                      <li>Hand rehabilitation for chronic pain </li>
+                      <li>Trust social experiment</li>
+                    </ol>
+                  </div>
+              </div>
+            <br><br>
+        </div>
+        <div class="modal-footer no-border">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 </div>
   <!-- This section is just for mobile versions < 650px -->
   <div class="mobile_version">
