@@ -6,6 +6,7 @@ $(document).ready(function() {
   //projects
 
   //init
+
   $('#midi_section').hide();
   $('#kuniyoshi_section').hide();
   $('#hand_section').hide();
@@ -144,6 +145,7 @@ $('.b2_1').mouseenter(function(){
     autoplay:true,
     path: 'js/animation_1/data.json'
   })
+  anim_b2_1.setSpeed(2);
 });
 
 $('.b2_1').mouseleave(function(){
@@ -159,6 +161,7 @@ $('.b2_2').mouseenter(function(){
     autoplay:true,
     path: 'js/animation_2/data_2.json'
   })
+  anim_b2_2.setSpeed(2);
 });
 
 $('.b2_2').mouseleave(function(){
@@ -175,6 +178,7 @@ $('.b2_3').mouseenter(function(){
     autoplay:true,
     path: 'js/animation_3/data_3.json'
   })
+  anim_b2_3.setSpeed(2);
 });
 
 $('.b2_3').mouseleave(function(){
@@ -195,6 +199,29 @@ $('.b2_4').mouseenter(function(){
 $('.b2_4').mouseleave(function(){
   anim_b2_4.destroy();
 });
+
+
+// Mobile versions
+
+  $('.block_woodman').on("click",function(){
+    anim_b2_1 = bodymovin.loadAnimation({
+      container: document.getElementById('anim_b2_1_mobile'),
+      renderer: 'svg',
+      loop: false,
+      autoplay:true,
+      path: 'js/animation_1/data.json'
+    })
+    anim_b2_1.setSpeed(3);
+    anim_b2_1.addEventListener("complete", function(){
+    $("#b2_1_modal").modal('toggle');
+    anim_b2_1.destroy();
+    });
+    $('#midi_section').show();
+    $('#kuniyoshi_section').show();
+    $('#hand_section').show();
+  });
+
+  
 
 
 });
