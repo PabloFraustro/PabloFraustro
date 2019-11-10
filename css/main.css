@@ -104,7 +104,7 @@ body{
 #b2_1_modal .modal_title_rotate{
   transform: rotate(-180deg);
   writing-mode: vertical-lr;
-  margin-top:-25%;
+  margin-top:-20%;
   color:#34FFC1;
 }
 
@@ -118,16 +118,18 @@ body{
 #b2_3_modal .modal_title_rotate{
   transform: rotate(-180deg);
   writing-mode: vertical-lr;
-  margin-top:-25%;
-  color:#6DA344;
+  margin-top:-23%;
+  color:rgb(102, 206, 23);
 }
 
-#b2_4_modal modal_title_rotate{
-  /* transform: rotate(-180deg);
-  writing-mode: vertical-lr; */
-  /* margin-top:-25%; */
+
+#b2_4_modal .modal_title_rotate{
+  transform: rotate(-180deg);
+  writing-mode: vertical-lr;
+  margin-top:-23%;
   color:#C199FF;
 }
+
 
 .modal_title{
   margin-left:25%;
@@ -135,13 +137,24 @@ body{
 
 #b2_1_modal .modal_icon{
   margin-left:40%;
-  margin-top:-105%;
+  margin-top:-90%;
 }
 
 #b2_2_modal .modal_icon{
   margin-left:40%;
-  margin-top:-75%;
+  margin-top:-85%;
 }
+
+#b2_3_modal .modal_icon{
+  margin-left:40%;
+  margin-top:-50%;
+}
+
+#b2_4_modal .modal_icon{
+  margin-left:35%;
+  margin-top:-45%;
+}
+
 
 .projects_list{
   font-size:20px;
@@ -380,7 +393,7 @@ NOTE: All is referenced to width of the screen
 .b2_3 h2{
   position:absolute;
   top: 1.7vw;
-  right:8vw;
+  right:9.5vw;
 }
 
 .b2_3 .icon_projects{
