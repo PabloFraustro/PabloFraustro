@@ -217,6 +217,53 @@ $('.b2_4').mouseleave(function(){
     $('#hand_section').show();
   });
 
+
+  $('.block_computer').on("click",function(){
+    anim_b2_2 = bodymovin.loadAnimation({
+      container: document.getElementById('anim_b2_2_mobile'),
+      renderer: 'svg',
+      loop: false,
+      autoplay:true,
+      path: 'js/animation_2/data_2.json'
+    })
+    anim_b2_2.setSpeed(3);
+    anim_b2_2.addEventListener("complete", function(){
+    $("#b2_2_modal").modal('toggle');
+    anim_b2_2.destroy();
+    });
+  });
+
+
+  $('.block_micro').on("click",function(){
+    anim_b2_3 = bodymovin.loadAnimation({
+      container: document.getElementById('anim_b2_3_mobile'),
+      renderer: 'svg',
+      loop: false,
+      autoplay:true,
+      path: 'js/animation_3/data_3.json'
+    })
+    anim_b2_3.setSpeed(3);
+    anim_b2_3.addEventListener("complete", function(){
+    $("#b2_3_modal").modal('toggle');
+    anim_b2_3.destroy();
+    });
+  });
+
+
+  $('.block_slack').on("click",function(){
+    anim_b2_4 = bodymovin.loadAnimation({
+      container: document.getElementById('anim_b2_4_mobile'),
+      renderer: 'svg',
+      loop: false,
+      autoplay:true,
+      path: 'js/animation_4/data_4.json'
+    })
+    anim_b2_4.setSpeed(3);
+    anim_b2_4.addEventListener("complete", function(){
+    $("#b2_4_modal").modal('toggle');
+    anim_b2_4.destroy();
+    });
+  });
   
 
 

@@ -159,7 +159,7 @@ body{
 .projects_list{
   font-size:20px;
   margin-top:5%;
-  margin-left:25%;
+  margin-left:10%;
 }
 
 .li_midi:hover{
@@ -688,6 +688,13 @@ NOTE: All is referenced to width of the screen
 }
 /*Media Queries*/
 
+@media only screen and (max-width: 1000px) {
+ .modal_section_init{
+  display:none;
+  visibility: hidden;
+ }
+}
+
 
 @media only screen and (min-width: 650px) and (min-aspect-ratio:3/2){
   #warning{
@@ -711,6 +718,26 @@ NOTE: All is referenced to width of the screen
   }
   #warning{
     display:none;
+  }
+
+  #next_project_0{
+    display:none;
+    visibility: hidden;
+  }
+
+  #next_project_1{
+    display:none;
+    visibility: hidden;
+  }
+
+  #next_project_2{
+    display:none;
+    visibility: hidden;
+  }
+
+  #next_project_3{
+    display:none;
+    visibility: hidden;
   }
 
   body .grid{
@@ -745,7 +772,7 @@ NOTE: All is referenced to width of the screen
   }
 
   .block_micro h3{
-    margin-top:-1vw;
+    margin-top:-4vw;
   }
 
   .block_computer{
@@ -875,7 +902,6 @@ NOTE: All is referenced to width of the screen
 
   #kuniyoshi_section{
     visibility: visible;
-
   }
 }
 
