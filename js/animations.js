@@ -72,13 +72,13 @@ $(".fancybox").fancybox({
     closeEffect: "none"
 });
 
-$(".zoom").hover(function(){
+// $(".zoom").hover(function(){
 
-$(this).addClass('transition');
-}, function(){
+// $(this).addClass('transition');
+// }, function(){
     
-$(this).removeClass('transition');
-});
+// $(this).removeClass('transition');
+// });
 //   //Computer effects
 
 //   $(".block_computer").hover(function(){
