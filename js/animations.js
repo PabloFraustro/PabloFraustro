@@ -189,6 +189,7 @@ $('.b2_4').mouseenter(function(){
     autoplay:true,
     path: 'js/animation_4/data_4.json'
   })
+  anim_b2_4.setSpeed(2);
 });
 
 $('.b2_4').mouseleave(function(){

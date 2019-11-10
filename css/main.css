@@ -232,9 +232,12 @@ NOTE: All is referenced to width of the screen
   position:relative;
 }
 /*Column 2*/
+.b2_0_0{
+  grid-row:1/15;
+}
 .b2_0{
   grid-column:3/4;
-  grid-row:1/25;
+  grid-row:15/25;
   position:relative;
 }
 .b2_1{
@@ -336,12 +339,12 @@ NOTE: All is referenced to width of the screen
 /*Second column  ----------------------  */
 
 .about_me{
-  font-size:2.5vw;
+  font-size:2vw;
   color:#34FFC1;
   position: absolute;
-  bottom:.2vw;
+  bottom:.5vw;
   right:3vw;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .b2_1 .icon_projects{
@@ -362,29 +365,29 @@ NOTE: All is referenced to width of the screen
 .b2_2 h2{
   position:absolute;
   top: 2.5vw;
-  right:10.8vw;
+  right:9.6vw;
 }
 
 .b2_2 .icon_projects{
   fill: white;
   position:relative;
   width:6vw;
-  left:9vw;
-  top:3vw;
+  left:9.3vw;
+  top:3.3vw;
 
 }
 
 .b2_3 h2{
   position:absolute;
   top: 1.7vw;
-  right:11vw;
+  right:8vw;
 }
 
 .b2_3 .icon_projects{
   fill: white;
   width:6vw;
   position:absolute;
-  left:9vw;
+  left:9.4vw;
   top:1.8vw;
 
 }
@@ -399,8 +402,8 @@ NOTE: All is referenced to width of the screen
   fill: white;
   width:6vw;
   position:absolute;
-  left:9vw;
-  top:4vw;
+  left:9.4vw;
+  top:2vw;
 }
 
 
@@ -552,12 +555,18 @@ NOTE: All is referenced to width of the screen
 }
 
 
-/* .block_slack:hover {
-  cursor:pointer;
-  transition-duration: 0.5s;
-  background-color: rgba(255,255,255,.1);
-}
+ /* animations  */
 
+ #anim_b2_3{
+  transform: rotate(-.3deg);
+ }
+
+
+ #anim_b2_4{
+  transform: rotate(-.4deg);
+ }
+
+/*
 .block_woodman:hover {
   cursor:pointer;
   transition-duration: 0.5s;
