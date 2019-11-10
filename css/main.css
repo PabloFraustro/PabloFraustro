@@ -170,7 +170,13 @@ body{
 
 
 #b2_2_modal .projects_list li:hover{
-  color:#8F476B;
+  color:#8F476B  !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#b2_2_modal .projects_list a:hover{
+  color:#8F476B  !important;
   cursor: pointer;
   text-decoration: underline;
 }

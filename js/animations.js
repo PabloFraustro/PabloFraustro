@@ -67,11 +67,6 @@ $(document).ready(function() {
     $("#b2_4_modal").modal('toggle');
   });
 
-$(".fancybox").fancybox({
-    openEffect: "none",
-    closeEffect: "none"
-});
-
 // $(".zoom").hover(function(){
 
 // $(this).addClass('transition');
