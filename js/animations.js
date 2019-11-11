@@ -1,6 +1,10 @@
 
 $(document).ready(function() {
 
+  
+    if (window.innerWidth < 650) {
+      $('#warning_modal').modal('show');
+    }
   // modal content managment
 
   //projects
