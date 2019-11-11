@@ -35,9 +35,9 @@
     .modal-title {
         color:#000;
     }
-    .modal-footer{
+    /* .modal-footer{
       display:none;  
-    }
+    } */
     
  /* 1 GENERAL CSS SETTINGS */
 *{
@@ -707,6 +707,7 @@ NOTE: All is referenced to width of the screen
 
 @media only screen and (min-width: 650px) and (max-aspect-ratio:3/2){
 
+
   #extra_bg{
     display:visible;
     transform: scaleX(-1);
@@ -726,6 +727,12 @@ NOTE: All is referenced to width of the screen
 }
 
 @media only screen and (max-width: 650px){
+
+  .modal-footer{
+    display: visible;  
+    visibility: visible;
+  }
+
   *{
     margin-top:0;
   }

@@ -108,23 +108,23 @@ $(document).ready(function() {
 //   $('#Slackline_modal').scrollTop(0);
 // });
 
-//   // Automatically close vimeo video when closing modal
-//   var $frame_1 = $('iframe#embedded_video_1');
-//   var $frame_2 = $('iframe#embedded_video_2');
+  // Automatically close vimeo video when closing modal
+  var $frame_1 = $('#embedded_video_1');
+  var $frame_2 = $('iframe#embedded_video_2');
 
-//   $('#Slackline_modal').on('hidden.bs.modal', function () {
-//     // saves the current iframe source
-//     var vidsrc_1 = $frame_1.attr('src');
-//     var vidsrc_2 = $frame_2.attr('src');
+  $('#b2_1_modal').on('hidden.bs.modal', function () {
+    // saves the current iframe source
+    var vidsrc_1 = $frame_1.attr('src');
+    var vidsrc_2 = $frame_2.attr('src');
 
-//     // sets the source to nothing, stopping the video
-//     $frame_1.attr('src','');
-//     $frame_2.attr('src','');
+    // sets the source to nothing, stopping the video
+    $frame_1.attr('src','');
+    $frame_2.attr('src','');
 
-//     // sets it back to the correct link so that it reloads immediately on the next window open
-//     $frame_1.attr('src', vidsrc_1);
-//     $frame_2.attr('src', vidsrc_2);
-// });
+    // sets it back to the correct link so that it reloads immediately on the next window open
+    $frame_1.attr('src', vidsrc_1);
+    $frame_2.attr('src', vidsrc_2);
+});
 
 var anim_b2_1;
 var anim_b2_2;
@@ -283,6 +283,9 @@ $('.b2_4').mouseleave(function(){
       if($('#b2_4_modal').is(':visible')){
         $('#b2_4_modal').modal('hide');
       }
+      $('#midi_section').hide();
+      $('#kuniyoshi_section').hide();
+      $('#hand_section').hide();
     }
   });
 
