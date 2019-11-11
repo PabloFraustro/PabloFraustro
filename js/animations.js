@@ -110,7 +110,7 @@ $(document).ready(function() {
 
   // Automatically close vimeo video when closing modal
   var $frame_1 = $('#embedded_video_1');
-  var $frame_2 = $('iframe#embedded_video_2');
+  var $frame_2 = $('#embedded_video_2');
 
   $('#b2_1_modal').on('hidden.bs.modal', function () {
     // saves the current iframe source
