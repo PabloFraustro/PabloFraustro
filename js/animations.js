@@ -269,6 +269,7 @@ $('.b2_4').mouseleave(function(){
 
   $(window).on('resize', function() {
     if ($(this).width() != width) {
+      window.scrollTo(0,0);
       width = $(this).width();
       if($('#b2_1_modal').is(':visible')){
         $('#b2_1_modal').modal('hide');
