@@ -207,7 +207,7 @@ $('.b2_4').mouseleave(function(){
       autoplay:true,
       path: 'js/animation_1/data.json'
     })
-    anim_b2_1.setSpeed(3);
+    anim_b2_1.setSpeed(4);
     anim_b2_1.addEventListener("complete", function(){
     $("#b2_1_modal").modal('toggle');
     anim_b2_1.destroy();
@@ -218,7 +218,7 @@ $('.b2_4').mouseleave(function(){
   });
 
 
-  $('.block_computer').on("click",function(){
+  $('.b1_mobile').on("click",function(){
     anim_b2_2 = bodymovin.loadAnimation({
       container: document.getElementById('anim_b2_2_mobile'),
       renderer: 'svg',
@@ -226,7 +226,7 @@ $('.b2_4').mouseleave(function(){
       autoplay:true,
       path: 'js/animation_2/data_2.json'
     })
-    anim_b2_2.setSpeed(3);
+    anim_b2_2.setSpeed(4);
     anim_b2_2.addEventListener("complete", function(){
     $("#b2_2_modal").modal('toggle');
     anim_b2_2.destroy();
@@ -234,7 +234,7 @@ $('.b2_4').mouseleave(function(){
   });
 
 
-  $('.block_micro').on("click",function(){
+  $('.b2_mobile').on("click",function(){
     anim_b2_3 = bodymovin.loadAnimation({
       container: document.getElementById('anim_b2_3_mobile'),
       renderer: 'svg',
@@ -242,7 +242,7 @@ $('.b2_4').mouseleave(function(){
       autoplay:true,
       path: 'js/animation_3/data_3.json'
     })
-    anim_b2_3.setSpeed(3);
+    anim_b2_3.setSpeed(4);
     anim_b2_3.addEventListener("complete", function(){
     $("#b2_3_modal").modal('toggle');
     anim_b2_3.destroy();
@@ -250,7 +250,7 @@ $('.b2_4').mouseleave(function(){
   });
 
 
-  $('.block_slack').on("click",function(){
+  $('.b3_mobile').on("click",function(){
     anim_b2_4 = bodymovin.loadAnimation({
       container: document.getElementById('anim_b2_4_mobile'),
       renderer: 'svg',
@@ -258,13 +258,32 @@ $('.b2_4').mouseleave(function(){
       autoplay:true,
       path: 'js/animation_4/data_4.json'
     })
-    anim_b2_4.setSpeed(3);
+    anim_b2_4.setSpeed(4);
     anim_b2_4.addEventListener("complete", function(){
     $("#b2_4_modal").modal('toggle');
     anim_b2_4.destroy();
     });
   });
   
+  var width = $(window).width();
+
+  $(window).on('resize', function() {
+    if ($(this).width() != width) {
+      width = $(this).width();
+      if($('#b2_1_modal').is(':visible')){
+        $('#b2_1_modal').modal('hide');
+      }
+      if($('#b2_2_modal').is(':visible')){
+        $('#b2_2_modal').modal('hide');
+      }
+      if($('#b2_3_modal').is(':visible')){
+        $('#b2_4_modal').modal('hide');
+      }
+      if($('#b2_4_modal').is(':visible')){
+        $('#b2_4_modal').modal('hide');
+      }
+    }
+  });
 
 
 });

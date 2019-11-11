@@ -700,16 +700,29 @@ NOTE: All is referenced to width of the screen
   #warning{
     display:none;
   }
+  #extra_bg{
+    display:none;
+  }
 }
 
 @media only screen and (min-width: 650px) and (max-aspect-ratio:3/2){
-  body .grid{
+
+  #extra_bg{
+    display:visible;
+    transform: scaleX(-1);
+  }
+
+  body{
+    height:100vh;
+    overflow: hidden;
+  }
+  /* body .grid{
     display:none;
   }
 
   #warning{
     display:visible;
-  }
+  } */
 }
 
 @media only screen and (max-width: 650px){
@@ -717,6 +730,9 @@ NOTE: All is referenced to width of the screen
     margin-top:0;
   }
   #warning{
+    display:none;
+  }
+  #extra_bg{
     display:none;
   }
 
@@ -767,15 +783,15 @@ NOTE: All is referenced to width of the screen
     z-index:0;
   }
 
-  .block_slack h3{
+  .b3_mobile h3{
     margin-left:65vw;
   }
 
-  .block_micro h3{
+  .b2_mobile h3{
     margin-top:-4vw;
   }
 
-  .block_computer{
+  .b1_mobile{
     width:100%;
     height:37vw;
     position:absolute;
@@ -789,14 +805,14 @@ NOTE: All is referenced to width of the screen
     top:69vw;
   }
 
-  .block_micro{
+  .b2_mobile{
     width:100%;
     height:37vw;
     position:absolute;
     top:147vw;
   }
 
-  .block_slack{
+  .b3_mobile{
     width:100%;
     height:37vw;
     position:absolute;
