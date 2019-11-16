@@ -116,19 +116,30 @@ $(document).ready(function() {
   var $frame_1 = $('#embedded_video_1');
   var $frame_2 = $('#embedded_video_2');
 
+
   $('#b2_1_modal').on('hidden.bs.modal', function () {
     // saves the current iframe source
     var vidsrc_1 = $frame_1.attr('src');
-    var vidsrc_2 = $frame_2.attr('src');
 
     // sets the source to nothing, stopping the video
     $frame_1.attr('src','');
-    $frame_2.attr('src','');
 
     // sets it back to the correct link so that it reloads immediately on the next window open
     $frame_1.attr('src', vidsrc_1);
-    $frame_2.attr('src', vidsrc_2);
 });
+
+$('#b2_2_modal').on('hidden.bs.modal', function () {
+  // saves the current iframe source
+  var vidsrc_2 = $frame_2.attr('src');
+
+  // sets the source to nothing, stopping the video
+  $frame_2.attr('src','');
+
+  // sets it back to the correct link so that it reloads immediately on the next window open
+  $frame_2.attr('src', vidsrc_2);
+});
+
+
 
 var anim_b2_1;
 var anim_b2_2;
