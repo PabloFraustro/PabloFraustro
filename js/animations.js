@@ -237,6 +237,7 @@ $('.b2_4').mouseleave(function(){
     $('#midi_section').show();
     $('#kuniyoshi_section').show();
     $('#hand_section').show();
+    $('#marella_section').show();
   });
 
 
