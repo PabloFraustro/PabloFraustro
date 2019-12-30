@@ -162,8 +162,7 @@ var anim_b2_1;
 var anim_b2_2;
 var anim_b2_3;
 var anim_b2_4;
-
-if (window.innerWidth > 650) { //support just mobile animations
+ //support just mobile animations
 
 $('.b2_1').mouseenter(function(){
   $(".b2_1").css("cursor","pointer");
@@ -234,18 +233,7 @@ $('.b2_4').mouseleave(function(){
 // Mobile versions
 
   $('.block_woodman').on("click",function(){
-    anim_b2_1 = bodymovin.loadAnimation({
-      container: document.getElementById('anim_b2_1_mobile'),
-      renderer: 'svg',
-      loop: false,
-      autoplay:true,
-      path: 'js/animation_1/data.json'
-    })
-    anim_b2_1.setSpeed(4);
-    anim_b2_1.addEventListener("complete", function(){
     $("#b2_1_modal").modal('toggle');
-    anim_b2_1.destroy();
-    });
     $('#midi_section').show();
     $('#kuniyoshi_section').show();
     $('#hand_section').show();
@@ -253,52 +241,89 @@ $('.b2_4').mouseleave(function(){
 
 
   $('.b1_mobile').on("click",function(){
-    anim_b2_2 = bodymovin.loadAnimation({
-      container: document.getElementById('anim_b2_2_mobile'),
-      renderer: 'svg',
-      loop: false,
-      autoplay:true,
-      path: 'js/animation_2/data_2.json'
-    })
-    anim_b2_2.setSpeed(4);
-    anim_b2_2.addEventListener("complete", function(){
     $("#b2_2_modal").modal('toggle');
-    anim_b2_2.destroy();
-    });
+
   });
 
 
   $('.b2_mobile').on("click",function(){
-    anim_b2_3 = bodymovin.loadAnimation({
-      container: document.getElementById('anim_b2_3_mobile'),
-      renderer: 'svg',
-      loop: false,
-      autoplay:true,
-      path: 'js/animation_3/data_3.json'
-    })
-    anim_b2_3.setSpeed(4);
-    anim_b2_3.addEventListener("complete", function(){
     $("#b2_3_modal").modal('toggle');
-    anim_b2_3.destroy();
-    });
   });
 
 
   $('.b3_mobile').on("click",function(){
-    anim_b2_4 = bodymovin.loadAnimation({
-      container: document.getElementById('anim_b2_4_mobile'),
-      renderer: 'svg',
-      loop: false,
-      autoplay:true,
-      path: 'js/animation_4/data_4.json'
-    })
-    anim_b2_4.setSpeed(4);
-    anim_b2_4.addEventListener("complete", function(){
     $("#b2_4_modal").modal('toggle');
-    anim_b2_4.destroy();
-    });
   });
   
-}
+
+  //backup
+
+  // $('.block_woodman').on("click",function(){
+  //   anim_b2_1 = bodymovin.loadAnimation({
+  //     container: document.getElementById('anim_b2_1_mobile'),
+  //     renderer: 'svg',
+  //     loop: false,
+  //     autoplay:true,
+  //     path: 'js/animation_1/data.json'
+  //   })
+  //   anim_b2_1.setSpeed(4);
+  //   anim_b2_1.addEventListener("complete", function(){
+  //   $("#b2_1_modal").modal('toggle');
+  //   anim_b2_1.destroy();
+  //   });
+  //   $('#midi_section').show();
+  //   $('#kuniyoshi_section').show();
+  //   $('#hand_section').show();
+  // });
+
+
+  // $('.b1_mobile').on("click",function(){
+  //   anim_b2_2 = bodymovin.loadAnimation({
+  //     container: document.getElementById('anim_b2_2_mobile'),
+  //     renderer: 'svg',
+  //     loop: false,
+  //     autoplay:true,
+  //     path: 'js/animation_2/data_2.json'
+  //   })
+  //   anim_b2_2.setSpeed(4);
+  //   anim_b2_2.addEventListener("complete", function(){
+  //   $("#b2_2_modal").modal('toggle');
+  //   anim_b2_2.destroy();
+  //   });
+  // });
+
+
+  // $('.b2_mobile').on("click",function(){
+  //   anim_b2_3 = bodymovin.loadAnimation({
+  //     container: document.getElementById('anim_b2_3_mobile'),
+  //     renderer: 'svg',
+  //     loop: false,
+  //     autoplay:true,
+  //     path: 'js/animation_3/data_3.json'
+  //   })
+  //   anim_b2_3.setSpeed(4);
+  //   anim_b2_3.addEventListener("complete", function(){
+  //   $("#b2_3_modal").modal('toggle');
+  //   anim_b2_3.destroy();
+  //   });
+  // });
+
+
+  // $('.b3_mobile').on("click",function(){
+  //   anim_b2_4 = bodymovin.loadAnimation({
+  //     container: document.getElementById('anim_b2_4_mobile'),
+  //     renderer: 'svg',
+  //     loop: false,
+  //     autoplay:true,
+  //     path: 'js/animation_4/data_4.json'
+  //   })
+  //   anim_b2_4.setSpeed(4);
+  //   anim_b2_4.addEventListener("complete", function(){
+  //   $("#b2_4_modal").modal('toggle');
+  //   anim_b2_4.destroy();
+  //   });
+  // });
+  
+
 
 });
