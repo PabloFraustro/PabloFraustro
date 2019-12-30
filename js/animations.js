@@ -132,6 +132,8 @@ $(document).ready(function() {
   // Automatically close vimeo video when closing modal
   var $frame_1 = $('#embedded_video_1');
   var $frame_2 = $('#embedded_video_2');
+  var $frame_3 = $('.instagram-media');
+
 
 
   $('#b2_1_modal').on('hidden.bs.modal', function () {
@@ -156,6 +158,17 @@ $('#b2_2_modal').on('hidden.bs.modal', function () {
   $frame_2.attr('src', vidsrc_2);
 });
 
+
+$('#b2_1_modal').on('hidden.bs.modal', function () {
+  // saves the current iframe source
+  var vidsrc_3 = $frame_3.attr('src');
+
+  // sets the source to nothing, stopping the video
+  $frame_3.attr('src','');
+
+  // sets it back to the correct link so that it reloads immediately on the next window open
+  $frame_3.attr('src', vidsrc_3);
+});
 
 
 var anim_b2_1;
