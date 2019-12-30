@@ -14,6 +14,7 @@ $(document).ready(function() {
   $('#midi_section').hide();
   $('#kuniyoshi_section').hide();
   $('#hand_section').hide();
+  $('#marella_section').hide();
 
 
   $(".li_midi").click(function(){
@@ -21,6 +22,7 @@ $(document).ready(function() {
     window.scrollTo(0,0);
     $('#kuniyoshi_section').hide();
     $('#hand_section').hide();
+    $('#marella_section').hide();
     if($('#midi_section').is(':visible')){
       $('#midi_section').hide();
     }
@@ -33,6 +35,7 @@ $(document).ready(function() {
     window.scrollTo(0,0);
     $('#midi_section').hide();
     $('#hand_section').hide();
+    $('#marella_section').hide();
     if($('#kuniyoshi_section').is(':visible')){
       $('#kuniyoshi_section').hide();
     }
@@ -45,11 +48,25 @@ $(document).ready(function() {
     window.scrollTo(0,0);
     $('#midi_section').hide();
     $('#kuniyoshi_section').hide();
+    $('#marella_section').hide();
     if($('#hand_section').is(':visible')){
       $('#hand_section').hide();
     }
     else{
       $('#hand_section').show();
+    }
+  });
+
+  $(".li_marella").click(function(){
+    window.scrollTo(0,0);
+    $('#midi_section').hide();
+    $('#kuniyoshi_section').hide();
+    $('#hand_section').hide();
+    if($('#marella_section').is(':visible')){
+      $('#marella_section').hide();
+    }
+    else{
+      $('#marella_section').show();
     }
   });
 
@@ -145,6 +162,8 @@ var anim_b2_1;
 var anim_b2_2;
 var anim_b2_3;
 var anim_b2_4;
+
+if (window.innerWidth > 650) { //support just mobile animations
 
 $('.b2_1').mouseenter(function(){
   $(".b2_1").css("cursor","pointer");
@@ -280,6 +299,6 @@ $('.b2_4').mouseleave(function(){
     });
   });
   
-
+}
 
 });

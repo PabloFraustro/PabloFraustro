@@ -169,6 +169,12 @@ body{
   text-decoration: underline;
 }
 
+.li_capico:hover{
+  color:#34FFC1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .li_kuniyoshi:hover{
   color:#34FFC1;
   cursor: pointer;
@@ -181,6 +187,11 @@ body{
   text-decoration: underline;
 }
 
+.li_marella:hover{
+  color:#34FFC1;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 
 #b2_2_modal .projects_list li:hover{
@@ -372,8 +383,8 @@ NOTE: All is referenced to width of the screen
 
 .b2_1 h2{
   position:absolute;
-  top: 4vw;
-  right:12vw;
+  top: 3vw;
+  right:12.2vw;
 }
 
 .b2_2 h2{
@@ -760,6 +771,11 @@ NOTE: All is referenced to width of the screen
   }
 
   #next_project_3{
+    display:none;
+    visibility: hidden;
+  }
+
+  #next_project_4{
     display:none;
     visibility: hidden;
   }
