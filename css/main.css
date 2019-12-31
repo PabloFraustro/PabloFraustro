@@ -193,6 +193,12 @@ body{
   text-decoration: underline;
 }
 
+.li_atm:hover{
+  color:#34FFC1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 
 #b2_2_modal .projects_list li:hover{
   color:#8F476B  !important;
@@ -776,6 +782,11 @@ NOTE: All is referenced to width of the screen
   }
 
   #next_project_4{
+    display:none;
+    visibility: hidden;
+  }
+
+  #next_project_5{
     display:none;
     visibility: hidden;
   }

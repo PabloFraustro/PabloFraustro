@@ -15,7 +15,7 @@ $(document).ready(function() {
   $('#kuniyoshi_section').hide();
   $('#hand_section').hide();
   $('#marella_section').hide();
-
+  $('#atm_section').hide();
 
   $(".li_midi").click(function(){
     
@@ -23,6 +23,7 @@ $(document).ready(function() {
     $('#kuniyoshi_section').hide();
     $('#hand_section').hide();
     $('#marella_section').hide();
+    $('#atm_section').hide();
     if($('#midi_section').is(':visible')){
       $('#midi_section').hide();
     }
@@ -36,6 +37,7 @@ $(document).ready(function() {
     $('#midi_section').hide();
     $('#hand_section').hide();
     $('#marella_section').hide();
+    $('#atm_section').hide();
     if($('#kuniyoshi_section').is(':visible')){
       $('#kuniyoshi_section').hide();
     }
@@ -49,6 +51,7 @@ $(document).ready(function() {
     $('#midi_section').hide();
     $('#kuniyoshi_section').hide();
     $('#marella_section').hide();
+    $('#atm_section').hide();
     if($('#hand_section').is(':visible')){
       $('#hand_section').hide();
     }
@@ -62,11 +65,27 @@ $(document).ready(function() {
     $('#midi_section').hide();
     $('#kuniyoshi_section').hide();
     $('#hand_section').hide();
+    $('#atm_section').hide();
     if($('#marella_section').is(':visible')){
       $('#marella_section').hide();
     }
     else{
       $('#marella_section').show();
+    }
+  });
+
+  $(".li_atm").click(function(){
+    
+    window.scrollTo(0,0);
+    $('#kuniyoshi_section').hide();
+    $('#hand_section').hide();
+    $('#marella_section').hide();
+    $('#midi_section').hide();
+    if($('#atm_section').is(':visible')){
+      $('#atm_section').hide();
+    }
+    else{
+      $('#atm_section').show();
     }
   });
 
@@ -251,6 +270,7 @@ $('.b2_4').mouseleave(function(){
     $('#kuniyoshi_section').show();
     $('#hand_section').show();
     $('#marella_section').show();
+    $('#atm_section').show();
   });
 
 
