@@ -200,6 +200,12 @@ body{
 }
 
 
+.li_superfive:hover{
+  color:#34FFC1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 #b2_2_modal .projects_list li:hover{
   color:#8F476B  !important;
   cursor: pointer;

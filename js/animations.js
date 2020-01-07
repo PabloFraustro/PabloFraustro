@@ -16,6 +16,7 @@ $(document).ready(function() {
   $('#hand_section').hide();
   $('#marella_section').hide();
   $('#atm_section').hide();
+  $('#superfive_section').hide();
 
   $(".li_midi").click(function(){
     
@@ -24,6 +25,7 @@ $(document).ready(function() {
     $('#hand_section').hide();
     $('#marella_section').hide();
     $('#atm_section').hide();
+    $('#superfive_section').hide();
     if($('#midi_section').is(':visible')){
       $('#midi_section').hide();
     }
@@ -38,6 +40,7 @@ $(document).ready(function() {
     $('#hand_section').hide();
     $('#marella_section').hide();
     $('#atm_section').hide();
+    $('#superfive_section').hide();
     if($('#kuniyoshi_section').is(':visible')){
       $('#kuniyoshi_section').hide();
     }
@@ -52,6 +55,7 @@ $(document).ready(function() {
     $('#kuniyoshi_section').hide();
     $('#marella_section').hide();
     $('#atm_section').hide();
+    $('#superfive_section').hide();
     if($('#hand_section').is(':visible')){
       $('#hand_section').hide();
     }
@@ -66,6 +70,7 @@ $(document).ready(function() {
     $('#kuniyoshi_section').hide();
     $('#hand_section').hide();
     $('#atm_section').hide();
+    $('#superfive_section').hide();
     if($('#marella_section').is(':visible')){
       $('#marella_section').hide();
     }
@@ -81,11 +86,28 @@ $(document).ready(function() {
     $('#hand_section').hide();
     $('#marella_section').hide();
     $('#midi_section').hide();
+    $('#superfive_section').hide();
     if($('#atm_section').is(':visible')){
       $('#atm_section').hide();
     }
     else{
       $('#atm_section').show();
+    }
+  });
+
+  $(".li_superfive").click(function(){
+    
+    window.scrollTo(0,0);
+    $('#kuniyoshi_section').hide();
+    $('#hand_section').hide();
+    $('#marella_section').hide();
+    $('#midi_section').hide();
+    $('#atm_section').hide();
+    if($('#superfive_section').is(':visible')){
+      $('#superfive_section').hide();
+    }
+    else{
+      $('#superfive_section').show();
     }
   });
 
@@ -112,7 +134,7 @@ $(document).ready(function() {
   var $frame_2 = $('#embedded_video_2');
   var $frame_3 = $('.instagram-media');
   var $frame_4 = $('.instagram-media-2');
-
+  var $frame_5 = $('#embedded_video_3');
 
 
   $('#b2_1_modal').on('hidden.bs.modal', function () {
@@ -120,7 +142,8 @@ $(document).ready(function() {
     var vidsrc_1 = $frame_1.attr('src');
     var vidsrc_2 = $frame_2.attr('src');
     var vidsrc_3 = $frame_3.attr('src');
-    var vidsrc_4 = $frame_3.attr('src');
+    var vidsrc_4 = $frame_4.attr('src');
+    var vidsrc_5 = $frame_5.attr('src');
 
 
     // sets the source to nothing, stopping the video
@@ -128,12 +151,14 @@ $(document).ready(function() {
     $frame_2.attr('src','');
     $frame_3.attr('src','');
     $frame_4.attr('src','');
+    $frame_5.attr('src','');
 
     // sets it back to the correct link so that it reloads immediately on the next window open
     $frame_1.attr('src', vidsrc_1);
     $frame_2.attr('src', vidsrc_2);
     $frame_3.attr('src', vidsrc_3);
     $frame_4.attr('src', vidsrc_4);
+    $frame_5.attr('src', vidsrc_5);
 });
 
 
