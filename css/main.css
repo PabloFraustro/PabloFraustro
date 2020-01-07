@@ -819,7 +819,9 @@ NOTE: All is referenced to width of the screen
   }
 
   .b3_mobile h3{
-    margin-left:65vw;
+    margin-left:35vw;
+    margin-top:7vw;
+    font-weight: 700;
   }
 
   .b1_mobile h3{
@@ -827,7 +829,8 @@ NOTE: All is referenced to width of the screen
   }
 
   .b2_mobile h3{
-    margin-top:-4vw;
+    margin-top:-7vw;
+    margin-left:46vw;
   }
 
   .b1_mobile{
