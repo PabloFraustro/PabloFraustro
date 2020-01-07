@@ -761,22 +761,22 @@ NOTE: All is referenced to width of the screen
     display:none;
   }
 
-  #next_project_0{
+  /* #next_project_0{
     display:none;
     visibility: hidden;
-  }
+  } */
 
-  #next_project_1{
+  /* #next_project_1{
     display:none;
     visibility: hidden;
-  }
+  } */
 
-  #next_project_2{
+  /* #next_project_2{
     display:none;
     visibility: hidden;
-  }
+  } */
 
-  #next_project_3{
+  /* #next_project_3{
     display:none;
     visibility: hidden;
   }
@@ -789,7 +789,7 @@ NOTE: All is referenced to width of the screen
   #next_project_5{
     display:none;
     visibility: hidden;
-  }
+  } */
 
   body .grid{
     display:none;
@@ -820,6 +820,10 @@ NOTE: All is referenced to width of the screen
 
   .b3_mobile h3{
     margin-left:65vw;
+  }
+
+  .b1_mobile h3{
+    margin-top:-3vw;
   }
 
   .b2_mobile h3{
@@ -947,13 +951,13 @@ NOTE: All is referenced to width of the screen
   .modal_title_rotate{
     display:none;
   }
-  .projects_list{
+  /* .projects_list{
     display:none;
-  }
+  } */
 
-  #kuniyoshi_section{
+  /* #kuniyoshi_section{
     visibility: visible;
-  }
+  } */
 }
 
 /* Really small devices */
